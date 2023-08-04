@@ -1,5 +1,5 @@
 import '../index.css';
-import logo from "../images/logo.png"
+import secImg from "../images/sec-img.png"
 import { useState } from 'react';
 function Banner() {
     const [active, setActive] = useState(false)
@@ -52,7 +52,11 @@ function Banner() {
          </div> 
            
       </div>
+    <div className='sec-img-area'>
+    <img src={secImg} alt="" className='sec-img'/>
+    </div>
    </section>
+  
 </>
   );
 }

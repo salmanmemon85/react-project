@@ -37,7 +37,7 @@
 
 /* banner */
 .banner{
-  @apply py-24 flex justify-center items-center 
+  @apply pt-24 flex justify-center items-center 
 }
 .primary-hd{
   @apply text-7xl font-semibold text-[#174F81]
@@ -70,5 +70,8 @@
   @apply text-lg text-white
 }
 .inner-btn-area{
-  @apply flex py-[20px] px-[20px] justify-between items-center w-[48%] bg-white  shadow-lg   rounded-lg shadow-[#70707040]
+  @apply  flex py-[20px] px-[20px] justify-between items-center w-[48%] bg-white  shadow-lg   rounded-lg shadow-[#70707040]
+}
+.sec-img-area{
+  @apply absolute top-[456px] z-[-9]
 }
