@@ -34,7 +34,7 @@ function Banner() {
                         <div className="arrow-icon-area">
                            <i className="fa-solid fa-arrow-right"></i>
                         </div>
-                     
+
                      </div>
                      <div className="inner-btn-area">
                         <div>
@@ -43,20 +43,21 @@ function Banner() {
                         <div className="arrow-icon-area">
                            <i className="fa-solid fa-arrow-right"></i>
                         </div>
-                     
+
                      </div>
                   </div>
+                  <div className='sec-img-area'>
+    <img src={secImg} alt="" className='sec-img'/>
+    </div>
          </div>
                </div>
             </div>
-         </div> 
-           
+         </div>
+
       </div>
-    <div className='sec-img-area'>
-    <img src={secImg} alt="" className='sec-img'/>
-    </div>
+
    </section>
-  
+
 </>
   );
 }

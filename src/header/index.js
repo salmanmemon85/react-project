@@ -15,10 +15,10 @@ function Header() {
                 <a href="./">
                     <img src={logo} className="" alt="logo" />
                 </a>
-              </div>  
+              </div>
               <div className="col-span-9 span-md-12 span-sm-12">
                 <div className="nav-bar">
-                    <ul className="list flex items-center">
+                    <ul className="list flex items-center justify-content-between">
                         <li className="item"><a href="#">Home</a></li>
                         <li className="item"><a href="#">About us</a></li>
                         <li className="item"><a href="#">Syllabus</a></li>
@@ -33,7 +33,7 @@ function Header() {
                             <li><a className="dropdown-item" href="#">Teachar our Staff</a></li>
                             <li><a className="dropdown-item" href="#">Parent our Guadian</a></li>
                         </ul>
-                        
+
                         </li>
                     </ul>
                 </div>
