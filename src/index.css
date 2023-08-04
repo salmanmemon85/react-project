@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* header */
+.item {
+  @apply ml-10 mr-14 
+  }
+  .header{
+    @apply bg-white  shadow-lg shadow-[#70707040] py-3
+  }
+.item{
+  @apply text-lg uppercase transition ease-in-out delay-150
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.item:hover{
+  @apply text-[#EDA825] transition ease-in-out delay-150
+}
+.dropdown-btn{
+  @apply bg-[#174E81] py-3 px-5 rounded-lg text-white
+}
+.dropdown-btn i {
+  @apply mx-2
+}
+.drop-down-menu{
+  @apply absolute hidden w-56 bg-white  shadow-lg top-24  rounded-lg shadow-[#70707040] py-4 px-10 transition ease-in-out delay-150 
+}
+.drop-down-menu.active{
+  @apply block transition ease-in-out delay-150
+}
+.drop-down-menu li{ 
+  @apply text-sm mb-3 transition ease-in-out delay-150
+}
+.drop-down-menu li:hover{
+  @apply text-[#EDA825] transition ease-in-out delay-150
+}
+
+/* banner */
+.banner{
+  @apply py-24 flex justify-center items-center 
+}
+.primary-hd{
+  @apply text-7xl font-semibold text-[#174F81]
+}
+.yello-text{
+  @apply text-[#EDA825]
+}
+.space-bottom{
+  @apply mb-3
+}
+.light-hd{
+  @apply text-5xl leading-[60px]
+}
+.small-size{
+  @apply text-4xl 
+}
+.main-banner-login-area{
+  @apply px-[140px] py-[30px]
+}
+.login-banner-btn {
+  @apply bg-[#3066FB] px-[40px] py-[20px] rounded-lg mb-4
+}
+.login-banner-btn span{
+  @apply text-white text-xl
+}
+.arrow-icon-area{
+  @apply w-[47px] h-[47px] bg-[#EDA825] flex items-center justify-center rounded-full 
+}
+.arrow-icon-area i{
+  @apply text-lg text-white
+}
+.inner-btn-area{
+  @apply flex py-[20px] px-[20px] justify-between items-center w-[48%] bg-white  shadow-lg   rounded-lg shadow-[#70707040]
 }
