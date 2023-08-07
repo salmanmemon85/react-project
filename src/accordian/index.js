@@ -4,8 +4,8 @@ import "../index.css"
 const Accordion = ({ id, title, content, isOpen, onClick }) => {
   return (
 
-    <div className="accordion">
-      <div className="inner-btn-area w-100 mb-4" onClick={onClick}>
+    <div className="accordion  mb-4">
+      <div className="inner-btn-area w-100" onClick={onClick}>
                         <div className='inner-text-btn ' >
                        {title}
                         </div>
@@ -13,7 +13,11 @@ const Accordion = ({ id, title, content, isOpen, onClick }) => {
                         <i class="fa-solid fa-arrow-down"></i>
                         </div>
                      </div>
-                       {isOpen && <div className="accordion-content">{content}</div>}
+                       <div className={isOpen ? "accordion-content active" : "accordion-content"}>
+                        <p>
+{content}
+                        </p>
+                        </div>
                      </div>
   );
 };
