@@ -1,23 +1,37 @@
 import React, { useState } from 'react';
 import '../index.css';
 import img3 from "../images/img3.png"
+import Accordion from '../accordian';
 
-
+const accordionData = [
+  {
+    id: 1,
+    title: "Lorem Ipsum Dummy Text?",
+    content: "Content for Lorem Ipsum Dummy Text? goes here."
+  },
+  {
+    id: 2,
+    title: "Lorem Ipsum Dummy Text?",
+    content: "Content for Lorem Ipsum Dummy Text? goes here."
+  },
+  {
+    id: 3,
+    title: "Lorem Ipsum Dummy Text?",
+    content: "Content for Lorem Ipsum Dummy Text? goes here."
+  },
+];
 function Contact() {
-        const [activeButton, setActiveButton] = useState(null);
-      
-        const handleButtonClick = (buttonIndex) => {
-          setActiveButton((prevActiveButton) =>
-            prevActiveButton === buttonIndex ? null : buttonIndex
-          );
-        }
+       const [openAccordion, setOpenAccordion] = useState(null);
+  const handleAccordionClick = (id) => {
+    setOpenAccordion((prevId) => (prevId === id ? null : id));
+  };
 return (
 <>
 <section className="contact" >
    <div className="container mx-auto">
       <div className='grid grid-cols-12 flex justify-between  relative'>
           <div className='col-span-6'>
-            
+
             <div className='contact-hd-area'>
                 <h3>Unlock the door <br/>
                 to boundless </h3>
@@ -28,47 +42,25 @@ return (
                 curiosity into expertise!"
                 </p>
                 </div>
-                <div className="inner-btn-area w-100 mb-4">
-                        <div className='inner-text-btn '>
-                        Lorem Ipsum Dummy Text?
-                        </div>
-                        <div className="arrow-icon-area">
-                        <i class="fa-solid fa-arrow-down"></i>
-                        </div>
-                     </div>
-                     <div className="inner-btn-area w-100  mb-4">
-                        <div className='inner-text-btn '>
-                        Lorem Ipsum Dummy Text?
-                        </div>
-                        <div className="arrow-icon-area">
-                        <i class="fa-solid fa-arrow-down"></i>
-                        </div>
+                  {accordionData.map(item => (
+                     <Accordion
+                        key={item.id}
+                        id={item.id}
+                        title={item.title}
+                        content={item.content}
+                        isOpen={openAccordion === item.id}
+                        onClick={() => handleAccordionClick(item.id)}
+                     />
+                     ))}
 
-                     </div>
-                     <div className="inner-btn-area w-100  mb-4">
-                        <div className='inner-text-btn '>
-                        Lorem Ipsum Dummy Text?
-                        </div>
-                        <div className="arrow-icon-area">
-                        <i class="fa-solid fa-arrow-down"></i>
-                        </div>
 
-                     </div>
-                     <div className="inner-btn-area w-100  mb-4">
-                        <div className='inner-text-btn '>
-                        Lorem Ipsum Dummy Text?
-                        </div>
-                        <div className="arrow-icon-area">
-                        <i class="fa-solid fa-arrow-down"></i>
-                        </div>
 
-                     </div>
-            </div>  
+            </div>
             <div className='col-span-6'>
                 <form action>
                 <div className='contact-hd-area form-area'>
-                <h3>Having Trouble Finding 
-What You Need? 
+                <h3>Having Trouble Finding
+                  What You Need?
                </h3>
                 </div>
                 </form>

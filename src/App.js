@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import Banner from './banner';
 import Header from './header';
@@ -9,10 +10,13 @@ import Footer from './footer';
 
 
 
+
 function App() {
+
   return (
     <div className="App">
       <Header/>
+
       <Banner/>
       <SectionSkil/>
       <SectionClip/>

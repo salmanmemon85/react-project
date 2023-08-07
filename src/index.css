@@ -60,13 +60,13 @@ body{
   @apply px-[140px] py-[30px]
 }
 .login-banner-btn {
-  @apply bg-[#3066FB] px-[40px] py-[20px] rounded-lg mb-4 
+  @apply bg-[#3066FB] px-[40px] py-[20px] rounded-lg mb-4
 }
 .login-banner-btn span{
   @apply text-white text-xl
 }
 .arrow-icon-area{
-  @apply w-[40px] h-[40px] bg-[#EDA825] flex items-center justify-center rounded-full 
+  @apply w-[40px] h-[40px] bg-[#EDA825] flex items-center justify-center rounded-full
 }
 .arrow-icon-area i{
   @apply text-lg text-white
@@ -89,7 +89,7 @@ img.sec-img{
   @apply  pt-96 pb-[27rem]    z-[9] left-0 relative  top-[-87px]
 }
 .hd-secondary{
-  @apply text-7xl font-semibold text-white 
+  @apply text-7xl font-semibold text-white
 }
 .para{
   @apply text-lg font-normal	 text-white
@@ -98,7 +98,7 @@ img.sec-img{
   @apply  justify-center mt-5 cursor-pointer
 }
 .inner-btn-area.skil-btn>div{
-  @apply ml-3 
+  @apply ml-3
 }
 .inner-text-btn{
   @apply text-2xl text-[#175081]
@@ -107,7 +107,7 @@ img.sec-img{
   background-image: url('./images/bg1.png');
   background-size: cover;
   width: 100%;
-  background-position: right;
+  background-position: center;
 }
 .skil-sec::after {
   content: "";
@@ -277,4 +277,107 @@ img.sec-img{
 }
 .form-area{
   @apply pl-[80px]
+}
+.accordion-content{
+  @apply h-[0] bg-white overflow-y-hidden transition ease-in-out
+}
+.accordion {
+  @apply bg-white
+}
+.accordion-content.active{
+  @apply bg-white  h-[20px] overflow-y-auto transition ease-in-out
+}
+
+@media(max-width: 1600px){
+  .sec-img-area{
+  @apply top-[-230px]
+}
+.img1-area {
+  @apply top-[-156px] right-[-41px] scale-[1.1]
+}
+.skil-sec::after{
+  @apply top-[79%]
+}
+.clip-path-1 img, .clip-path-2 img, .clip-path-3 img,.clip-path-4 img {
+    @apply w-[70%]
+}
+.clip-path-1{
+  @apply top-[7px]
+}
+.clip-path-2 {
+  @apply top-[221px] left-[50%]
+}
+.clip-path-4 {
+  @apply top-[260px] right-[-24%]
+}
+.clip-path-3 {
+  @apply top-[193px] right-[-51%]
+}
+.sec-content-area {
+    @apply pt-[45px]
+    pb-[0]
+    pl-[60px]
+    relative
+    z-[99]
+}
+.book-img {
+   @apply  scale-[0.7]
+    right-[-121px] bottom-[-62%]
+}
+.ai-power-img{
+     @apply  scale-[0.7]
+}
+.potential-sec{
+  @apply pt-[302px]
+}
+.primary-hd{
+  @apply text-5xl
+}
+.inner-btn-area.skil-btn.enrol-btn.power {
+   @apply  w-[46%]
+}
+.power-section{
+   @apply pb-[24px]
+}
+.footer{
+  @apply py-[40px]
+}
+.footer::after{
+  @apply h-[229px] top-[-175px]
+}
+}
+@media(max-width: 1024px){
+  .skil-sec{
+    @apply pt-[10rem] pb-[18rem]
+  }
+  .hd-secondary{
+    @apply text-5xl
+  }
+  .light-hd, .hd-secondary.small-size{
+    @apply text-3xl
+  }
+  .sec-img-area {
+   @apply top-[-156px];
+}
+.inner-btn-area.skil-btn.enrol-btn{
+ @apply w-[65%]
+}
+.potential-sec::after {
+    top: -90px;
+    height: 270px;
+}
+.potential-sec {
+  @apply  pt-[201px]
+}
+.book-img{
+  @apply  bottom-[3%] scale-[0.6] right-[-162px]
+
+}
+.ai-power-img{
+  @apply scale-[0.6]
+  left-[-18%]
+}
+.inner-btn-area.skil-btn.enrol-btn.power {
+    @apply w-[55%];
+}
 }

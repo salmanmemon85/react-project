@@ -1,6 +1,7 @@
 import '../index.css';
 import secImg from "../images/sec-img.png"
 import { useState } from 'react';
+
 function Banner() {
     const [active, setActive] = useState(false)
     const openDropDown = () => {
@@ -46,7 +47,7 @@ function Banner() {
 
                      </div>
                   </div>
-                 
+
          </div>
                </div>
             </div>
