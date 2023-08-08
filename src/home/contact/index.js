@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../index.css';
 import img3 from "../../images/img3.png"
-import Accordion from '../../accordian';
+import Accordion from '../../component/accordian';
 
 const accordionData = [
   {
