@@ -3,9 +3,13 @@ import logo from "../images/logo.png"
 import { useState } from 'react';
 function Header() {
     const [active, setActive] = useState(false)
+    const [isopen, setIsOpen] = useState(false)
     const openDropDown = () => {
         setActive(!active)
     }
+    const openMenu = () => {
+      setIsOpen(!isopen)
+  }
   return (
     <>
     <section className="header">
@@ -15,9 +19,11 @@ function Header() {
                 <a href="./">
                     <img src={logo} className="" alt="logo" />
                 </a>
+                <button className='open-menu' onClick={openMenu}><i class="fa-solid fa-bars"></i></button>
               </div>
               <div className="col-span-9 span-md-12 span-sm-12">
-                <div className="nav-bar">
+                <div className={isopen ? "nav-bar active" : "nav-bar"}>
+                  <button className='close-menu' onClick={openMenu}><i class="fa-solid fa-xmark"></i></button>
                     <ul className="list flex items-center justify-content-between">
                         <li className="item"><a href="#">Home</a></li>
                         <li className="item"><a href="#">About us</a></li>

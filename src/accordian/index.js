@@ -14,8 +14,8 @@ const Accordion = ({ id, title, content, isOpen, onClick }) => {
                         </div>
                      </div>
                        <div className={isOpen ? "accordion-content active" : "accordion-content"}>
-                        <p>
-{content}
+                        <p className='para'>
+                          {content}
                         </p>
                         </div>
                      </div>

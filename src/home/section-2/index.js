@@ -1,16 +1,32 @@
-import '../index.css';
-import img2 from "../images/img2.png"
-import clip1 from "../images/clip1.png"
-import clip2 from "../images/clip2.png"
-import clip3 from "../images/clip3.png"
-import clip4 from "../images/clip4.png"
+import '../../index.css';
+import img2 from "../../images/img2.png"
+import clip1 from "../../images/clip1.png"
+import clip2 from "../../images/clip2.png"
+import clip3 from "../../images/clip3.png"
+import clip4 from "../../images/clip4.png"
+import cube12 from "../../images/cube12.png"
+import cube13 from "../../images/cube13.png"
+import cube14 from "../../images/cube14.png"
+import cube15 from "../../images/cube15.png"
+import cube16 from "../../images/cube16.png"
+import cube17 from "../../images/cube17.png"
+import cube18 from "../../images/cube18.png"
+
+
+
 
 
 function SectionSkil() {
 return (
 <>
-<section className="" >
+<section className="relative section-2" >
+    <img src={cube12} alt='' className='cube12'/>
+    <img src={cube13} alt='' className='cube13'/>
+    <img src={cube14} alt='' className='cube14'/>
+    <img src={cube15} alt='' className='cube15'/>
+    <img src={cube16} alt='' className='cube16'/>
    <div className="container mx-auto">
+    <div className='rotate-area'></div>
       <div className='grid grid-cols-12 flex justify-end items-center relative'>
         <div className='col-span-9'>
             <div className='main-clip'>
@@ -32,7 +48,7 @@ return (
       <div className='grid grid-cols-12'>
         <div className='col-span-5'>
             <div className='sec-content-area'>
-                <h2 className="primary-hd light-hd space-bottom">Digital Learning <br/> Services
+                <h2 className="primary-hd  space-bottom">Digital Learning <br/> Services
                </h2>
                <p>The leading e-learning platform designed to help you
                 unleash your full potential.</p>
@@ -50,6 +66,8 @@ return (
    </div>
 </section>
 <section className='potential-sec'>
+<img src={cube17} alt='' className='cube17'/>
+    <img src={cube18} alt='' className='cube18'/>
     <div className='container w-100'>
         <div className='grid grid-cols-12 flex justify-content-between items-center'>
             <div className='col-span-6'>
@@ -61,7 +79,7 @@ return (
                  This advanced system is designed to closely replicate the format and difficulty level of actual exams, enabling you to build familiarity and boost your confidence.</p>
                </div>
             </div>
-            <div className='col-span-6'>
+            <div className='col-span-6 sec-2-img'>
                 <div className='book-img'>
                     <img src={img2}/>
                 </div>

@@ -1,19 +1,26 @@
-import '../index.css';
-import img1 from "../images/img1.png"
-import clip1 from "../images/clip1.png"
-import clip2 from "../images/clip2.png"
-import clip3 from "../images/clip3.png"
-import clip4 from "../images/clip4.png"
+import '../../index.css';
+import img1 from "../../images/img1.png"
+import cube8 from "../../images/cube8.png"
+import cube9 from "../../images/cube9.png"
+import cube10 from "../../images/cube10.png"
+import cube11 from "../../images/cube11.png"
+import subtraction from "../../images/subtraction.png"
 
 
 function SectionSkil() {
 return (
 <>
-<section className="skil-sec " >
+<section className="skil-sec">
+   <img src={subtraction} className='subtraction'/>
+   <img src={cube8} className='cube8'/>
+   <img src={cube9} className='cube9'/>
+   <img src={cube10} className='cube10'/>
+   <img src={cube11} className='cube11'/>
+
    <div className="container mx-auto">
-      <div className="grid grid-cols-10 flex justify-between items-center">
+      <div className="grid grid-cols-10 flex justify-between items-center row-img">
          <div className="col-span-5">
-            <div>
+            <div className='section-img-content'>
                <h2 className='hd-secondary small-size'>What is SkillCompute</h2>
                <h3 className='hd-secondary'>Special Attention <br/>
                   For Every Child

@@ -1,5 +1,14 @@
-import '../index.css';
-import secImg from "../images/sec-img.png"
+import '../../index.css';
+import secImg from "../../images/sec-img.png"
+import cube1 from "../../images/cube1.png"
+import cube2 from "../../images/cube2.png"
+import cube3 from "../../images/cube3.png"
+import cube4 from "../../images/cube4.png"
+import cube5 from "../../images/cube5.png"
+import cube6 from "../../images/cube6.png"
+import cube7 from "../../images/cube7.png"
+
+
 import { useState } from 'react';
 
 function Banner() {
@@ -10,10 +19,19 @@ function Banner() {
   return (
     <>
      <section className="banner">
+      <img src={cube1} alt='' className='cube1'/>
+      <img src={cube2} alt='' className='cube2'/>
+      <img src={cube3} alt='' className='cube3'/>
+      <img src={cube4} alt='' className='cube4'/>
+      <img src={cube5} alt='' className='cube5'/>
+      <img src={cube6} alt='' className='cube6'/>
+      <img src={cube7} alt='' className='cube7'/>
+     
+
       <div className="container mx-auto">
-         <div className="grid grid-col-10 justify-center items-center">
-            <div className="col-span-10 ">
-               <div className="text-center relative z-[999]">
+         <div className="grid grid-col-12 justify-center items-center">
+            <div className="col-span-12 ">
+               <div className="text-center relative z-[999] ">
                   <h1 className="primary-hd space-bottom">Unleash the <span className="yello-text">Potential</span>  Within!</h1>
                   <h2 className="primary-hd light-hd space-bottom">Empowering Young Minds with <br/>
                   <span  className="yello-text"> Math, Physics, Biology & Physics</span></h2>
