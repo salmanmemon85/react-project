@@ -26,7 +26,7 @@ function Header() {
                 <div className={isopen ? "nav-bar active" : "nav-bar"}>
                   <button className='close-menu' onClick={openMenu}><i class="fa-solid fa-xmark"></i></button>
 
-                    <ul className="list flex items-center justify-content-between">
+                    <ul className="list flex items-center justify-between">
                       <Link to="./" className="item">
                       Home
                       </Link>
@@ -42,8 +42,8 @@ function Header() {
                         </button>
                         <ul className={ active ? "drop-down-menu active" : "drop-down-menu"}>
                             <li><a className="dropdown-item" href="#">Student</a></li>
-                            <li><a className="dropdown-item" href="#">Teachar our Staff</a></li>
-                            <li><a className="dropdown-item" href="#">Parent our Guadian</a></li>
+                            <li><a className="dropdown-item" href="#">Parent or Guardian </a></li>
+                            <li><a className="dropdown-item" href="#">Institution  </a></li>
                         </ul>
 
                         </li>

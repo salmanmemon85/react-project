@@ -29,7 +29,7 @@ function Banner() {
      
 
       <div className="container mx-auto">
-         <div className="grid grid-col-12 justify-center items-center">
+         <div className="grid grid-col-12 justify-center items-center banner-row">
             <div className="col-span-12 ">
                <div className="text-center relative z-[999] ">
                   <h1 className="primary-hd space-bottom">Unleash the <span className="yello-text">Potential</span>  Within!</h1>
@@ -48,7 +48,7 @@ function Banner() {
                   <div className="banner-btn-area flex justify-between">
                      <div className="inner-btn-area">
                         <div className='inner-text-btn'>
-                           For School
+                        Login as a Parent
                         </div>
                         <div className="arrow-icon-area">
                            <i className="fa-solid fa-arrow-right"></i>
@@ -57,7 +57,7 @@ function Banner() {
                      </div>
                      <div className="inner-btn-area">
                         <div className='inner-text-btn'>
-                           For Parents
+                        Login as an Institution
                         </div>
                         <div className="arrow-icon-area">
                            <i className="fa-solid fa-arrow-right"></i>

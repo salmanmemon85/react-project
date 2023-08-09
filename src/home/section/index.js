@@ -10,7 +10,7 @@ import subtraction from "../../images/subtraction.png"
 function SectionSkil() {
 return (
 <>
-<section className="skil-sec">
+<section className="skil-sec" >
    <img src={subtraction} className='subtraction'/>
    <img src={cube8} className='cube8'/>
    <img src={cube9} className='cube9'/>
