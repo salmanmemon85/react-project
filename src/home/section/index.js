@@ -27,9 +27,9 @@ return (
                </h3>
                <div className='mt-10'>
                   <p className='para'>
-                     At SkillCompute, we believe that learning should be accessible to everyone, anytime, and anywhere. That's why we have curated an extensive collection of courses covering a wide array of subjects. Whether you're passionate about technology, arts and design, business, or personal development, we have the perfect course for you.
+                     At SkillCompute, we believe that learning should be <br/> accessible to everyone, anytime, and anywhere. That's <br/> why we have curated an extensive collection of courses <br/> covering a wide array of subjects. Whether you're <br/> passionate about technology, arts and design, business, <br/> or personal development, we have the perfect course <br/> for you.
                      <br/><br/>
-                     Our mission is to make learning accessible and convenient for everyone. Whether you're a beginner looking to explore a new subject or an experienced professional seeking to expand your expertise, we have the perfect learning solutions for you. With our user-friendly platform, you can access our courses anytime, anywhere, and at your own pace.
+                     Our mission is to make learning accessible and <br/> convenient for everyone. Whether you're a beginner <br/> looking to explore a new subject or an experienced <br/> professional seeking to expand your expertise, we have <br/> the perfect learning solutions for you. With our user-<br/>friendly platform, you can access our courses anytime,<br/> anywhere, and at your own pace.
                   </p>
                   <div className="inner-btn-area skil-btn">
                      <div className='inner-text-btn'>

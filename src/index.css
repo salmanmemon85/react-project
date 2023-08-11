@@ -4,26 +4,20 @@
 
 }
 
-/* @font-face {
+@font-face {
+  font-family: 'Regular';
+  src: url("./font/Radomir\ Tinkov\ \ QanelasSoftRegular.ttf");
+}
+@font-face {
   font-family: 'ExtraBold';
   src: url("./font/QanelasSoftDEMO-ExtraBold.ttf");
 }
 @font-face {
-  font-family: 'Qanelas-Bold';
-  src: url("../css/fonts/Qanelas-Bold.ttf");
+  font-family: 'semibold';
+  src: url("./font/Radomir\ Tinkov\ \ QanelasSoftSemiBold.ttf");
 }
-@font-face {
-  font-family: 'Qanelas-SemiBold';
-  src: url("../css/fonts/Qanelas-SemiBold.ttf");
-}
-@font-face {
-  font-family: 'Qanelas-ExtraBold';
-  src: url("../css/fonts/Qanelas-ExtraBold.ttf");
-}
-@font-face {
-  font-family: 'Qanelas-Regular';
-  src: url("../css/fonts/Qanelas-Regular.ttf");
-} */
+
+
 body{
   @apply overflow-x-hidden
 }
@@ -31,15 +25,29 @@ body{
   .header{
     @apply bg-white  shadow-lg shadow-[#70707040] py-3 relative z-[9999]
   }
+  /* .item{
+    font-family: 'UltraLight';
+  } */
 .item{
-  @apply text-lg uppercase transition ease-in-out delay-150
+  @apply text-lg uppercase transition ease-in-out delay-150 font-semibold cursor-pointer
 }
-
+.item{
+  font-family: 'Regular';
+}
+.item.syllabus-item:hover{
+  @apply text-[unset]
+}
+.item.syllabus-item li:hover{
+  @apply text-[#EDA825]
+}
 .item:hover{
   @apply text-[#EDA825] transition ease-in-out delay-150
 }
 .dropdown-btn{
   @apply bg-[#174E81] py-3 px-5 rounded-lg text-white
+}
+.dropdown-btn{
+  font-family: 'semibold';
 }
 .dropdown-btn i {
   @apply mx-2
@@ -56,6 +64,7 @@ body{
 .drop-down-menu li:hover{
   @apply text-[#EDA825] transition ease-in-out delay-150
 }
+
 /* keyframe */
 .cube2, .cube5, .cube15, .cube16 ,.cube19{
   -webkit-animation: rotate 5s normal linear infinite;
@@ -110,27 +119,9 @@ body{
     transform: scale(0, 0, 1, 360deg);
   }
 }
-.img1-area .img1, .subtraction {
+.subtraction {
   filter: drop-shadow(0 4px 8px rgba(202, 23, 23, 0.2));
   animation: shadow-animation 4s ease-in-out infinite;
-}
-@keyframes changeFillColor {
-  0%, 100% {
-    fill: #daebfe; 
-  }
-  25% {
-    fill: #eda825; 
-  }
-  50% {
-    fill: #1564fb; 
-  }
-  75% {
-    fill: #175081; 
-  }
-}
-
-.fill-color path {
-  animation: changeFillColor 16s linear infinite; /* Adjust duration as needed */
 }
 @keyframes shadow-animation {
   0%, 100% {
@@ -141,7 +132,91 @@ body{
   }
 }
 .primary-hd{
+  font-family: 'ExtraBold';
   animation: slide-in-anim 1.5s ease-out forwards;
+}
+
+.book-img::after {
+  @apply content-[""] w-[229%] h-[800px] absolute bg-no-repeat top-[50%] z-[-9] left-[50%]  transition ease-in-out 
+   translate-x-[-24%] translate-y-[-52%]
+}
+.book-img::after {
+  background-image: url(./images/img6.png);
+  animation: changeimg2 5s ease-out infinite;
+}
+@keyframes changeimg2 {
+	10% {
+    background-image: url(./images/img6.png);
+	}
+  20% {
+    background-image: none;
+	}
+  30% {
+    background-image: url(./images/img6.png);
+	}
+  40% {
+    background-image: none;
+	}
+  50% {
+    background-image: url(./images/img6.png);
+	}
+	60% {
+    background-image: none;
+	}
+	70% {
+    background-image: url(./images/img6.png);
+	}
+  80% {
+    background-image: none;
+	}
+  90% {
+    background-image: url(./images/img6.png);
+	}
+	100% {
+    background-image: none;
+	}
+}
+
+
+
+.img1-area::after {
+  @apply content-[""] w-[229%] h-[800px] absolute bg-no-repeat top-[50%] z-[-9] left-[50%]  transition ease-in-out scale-[0.7]
+   translate-x-[-36%] translate-y-[-47%]
+}
+.img1-area::after {
+  animation: changeimg 5s ease-out infinite;
+}
+@keyframes changeimg {
+	10% {
+    background-image: url(./images/img4.png);
+	}
+  20% {
+    background-image: none;
+	}
+  30% {
+    background-image: url(./images/img4.png);
+	}
+  40% {
+    background-image: none;
+	}
+  50% {
+    background-image: url(./images/img4.png);
+	}
+	60% {
+    background-image: none;
+	}
+	70% {
+    background-image: url(./images/img4.png);
+	}
+  80% {
+    background-image: none;
+	}
+  90% {
+    background-image: url(./images/img4.png);
+	}
+	100% {
+    background-image: none;
+	}
 }
 @keyframes slide-in-anim {
 	20% {
@@ -158,6 +233,7 @@ body{
 		transform: translateY(-50%);
 	}
 }
+
 .clip-path-2 h3,
  .clip-path-4 h3, 
  .clip-path-3 h3,
@@ -211,19 +287,19 @@ img.subtraction {
   @apply  absolute  left-[0%] top-[20%] z-[-999]
 }
 img.cube12 {
-  @apply  absolute  right-[20%] top-[45%] z-[-999]
+  @apply  absolute  right-[23%] top-[63%] z-[-999]
 }
 img.cube13 {
   @apply  absolute  right-[3%] top-[-3%] z-[-999]
 }
 img.cube14 {
-  @apply  absolute  right-[7%] bottom-[5%] z-[-999]
+  @apply  absolute  right-[3%] bottom-[-13%] z-[999]
 }
 img.cube15 {
-  @apply  absolute  left-[1%] bottom-[27%] z-[-999]
+  @apply  absolute  left-[1%] bottom-[-8%] z-[999]
 }
 img.cube16 {
-  @apply  absolute  left-[50%] bottom-[27%] z-[-999]
+  @apply  absolute  left-[45%] bottom-[-9%] z-[999]
 }
 img.cube17 {
   @apply  absolute  left-[1%] bottom-[12%]
@@ -244,18 +320,21 @@ img.cube21 {
 
 /* banner */
 .banner{
-  @apply pt-24 flex justify-center items-center relative
+  @apply pt-[10rem] flex justify-center items-center relative
 }
+
 .primary-hd{
   @apply text-7xl font-semibold text-[#174F81]
 }
 .yello-text{
-  @apply text-[#EDA825]
+  @apply text-[#EDA825] font-semibold
 }
 .space-bottom{
-  @apply mb-3
+  @apply mb-5
 }
-
+.banner-hd-classes{
+  @apply mt-[-3rem]
+}
 .light-hd, .hd-secondary.small-size{
   @apply text-5xl leading-[60px]
 }
@@ -269,8 +348,12 @@ img.cube21 {
   @apply bg-[#3066FB] px-[40px] py-[30px] rounded-lg mb-4
 }
 .login-banner-btn span{
-  @apply text-white text-xl
+  @apply text-white text-2xl font-semibold
 }
+.inner-btn-area.skil-btn .inner-text-btn{
+  @apply font-[700] 
+}
+
 .arrow-icon-area{
   @apply w-[40px] h-[40px] bg-[#EDA825] flex items-center justify-center rounded-full
 }
@@ -295,25 +378,31 @@ img.sec-img{
   @apply  pt-[30rem] pb-[27rem]    z-[9] left-0 relative  top-[-87px]
 }
 .hd-secondary{
+  font-family: 'ExtraBold';
+}
+.hd-secondary{
   @apply text-7xl font-semibold text-white
 }
 .para{
   @apply text-xl font-semibold	 text-white mt-5
 }
 .inner-btn-area.skil-btn{
-  @apply  justify-center mt-5 cursor-pointer
+  @apply  justify-center mt-5 cursor-pointer shadow-xl shadow-[#00000026]
 }
 .inner-btn-area.skil-btn>div{
   @apply ml-3
 }
 .inner-text-btn{
-  @apply text-2xl text-[#175081]
+  @apply text-xl text-[#175081] font-semibold
 }
 .skil-sec{
   @apply bg-cover  bg-center w-[100%] bg-no-repeat
 }
 .section-2::after {
- @apply content-['']  absolute top-[-31%] left-[-21px] h-[180px] w-[84%] rotate-[-7deg] bg-[#174F81] z-[-9999999999999]
+ @apply content-['']  absolute top-[-41%] left-[-21px] h-[180px] w-[84%] rotate-[-7deg] bg-[#174F81] z-[-9999999999999]
+}
+.sec-content-area .primary-hd{
+  @apply text-[5.5rem]
 }
 .skil-sec {
   background-image: url('./images/bg1.png');
@@ -327,7 +416,7 @@ img.sec-img{
   left-[21%]
 }
 .main-clip{
-  @apply  mt-[-33rem] absolute z-[9999] right-[6%] w-[70%] block h-[970px];
+  @apply  mt-[-30rem] absolute z-[9999] right-[6%] w-[70%] block h-[970px];
 }
 .clip-path-2 {
   @apply absolute top-[50%]
@@ -335,16 +424,19 @@ img.sec-img{
   translate-y-[-50%]
 }
 .clip-path-3 {
-  @apply  absolute top-[58%] right-[0]  translate-y-[-50%]
+  @apply  absolute top-[58%] right-[-6%]  translate-y-[-50%]
 }
 .clip-path-4 {
-  @apply  absolute top-[unset] right-[unset] bottom-[0px] left-[0] translate-x-[60%]
+  @apply  absolute top-[unset] right-[unset] bottom-[0px] left-[0] translate-x-[43%]
 }
 .sec-content-area{
-  @apply py-[239px] 
+  @apply pt-[339px] relative z-[99999] 
 }
 .sec-content-area p{
-  @apply text-lg font-normal
+  @apply text-lg font-semibold mt-[-5rem]
+}
+.sec-content-area h2{
+  @apply mb-5 leading-[1]
 }
 .inner-btn-area.skil-btn.enrol-btn{
   @apply bg-[#1564FB] py-[15px]
@@ -355,8 +447,11 @@ img.sec-img{
 .potential-sec{
   @apply bg-[#F1F2F2] pt-[358px] pb-[34px] relative
 }
+.potential-sec .para{
+  @apply mt-[-4rem]
+}
 .potential-sec::after {
-  @apply content-['']  absolute top-[-100px] left-[0] h-[348px] w-[100%] 
+  @apply content-['']  absolute top-[-46px] left-[-121px] h-[348px] w-[110%] 
  }
 .potential-sec::after {
   background-image: url(./images/bg2.png);
@@ -371,25 +466,31 @@ img.sec-img{
   @apply pt-[100px] pb-[180px]
 }
 .ai-power-img{
-  @apply absolute top-[0] left-[-13%] z-[-9999]
+  @apply absolute top-[6px] left-[-13%] z-[-9999]
 }
 .inner-btn-area.skil-btn.enrol-btn.power{
   @apply w-[40%]
 }
 .power-content-area{
-  @apply pt-[54px] pl-[100px]
+  @apply pt-[150px] pl-[100px]
 }
 .contact{
   @apply bg-[#174E81] py-[190px] relative overflow-y-hidden
 }
 .contact-hd-area h3{
+  font-family: 'ExtraBold';
+}
+.contact-hd-area h3{
   @apply text-6xl text-white font-semibold mb-5
 }
 .contact-hd-area{
-  @apply pt-[100px] pb-[18px]
+  @apply pt-[50px] pb-[18px]
 }
 .contact-hd-area h4{
-  @apply text-5xl text-white font-normal mb-5
+  @apply text-5xl text-white font-semibold mb-5
+}
+.contact-hd-area p, .para, .sec-content-area p{
+  font-family: 'Regular';
 }
 .contact-hd-area p{
   @apply text-2xl text-white font-normal mb-5
@@ -444,7 +545,7 @@ img.sec-img{
   @apply text-xl  text-white
 }
 .footer-address-area p strong{
-  @apply block
+  @apply block font-semibold
 }
 .copyright-sec{
   @apply bg-white py-[10px] text-center
@@ -506,10 +607,75 @@ img.sec-img{
 .open-menu, .close-menu{
   @apply hidden 
 }
+.power-content-area p{
+  @apply mt-[-5rem]
+}
+/* inner pages */
+.about-banner-area{
+  @apply bg-[#17BBF1] right-[10.5%] h-[700px] w-[644px] absolute top-0 z-[99] rounded-bl-[50%] rounded-br-[50%] overflow-hidden
+}
+.about-banner-area img{
+  @apply relative bottom-[16%]
+}
+.about-sec-1{
+  @apply bg-no-repeat bg-cover pt-[200px] h-[1030px]
+}
+.about-sec-1{
+  background-image: url(./images/bgabout.png);
+}
+.about-content-area{
+  @apply pt-[236px]
+}
+.about-content-area .primary-hd.space-bottom{
+  @apply text-[3.5rem]
+}
+.about-content-area p{
+  @apply mt-[-4rem]
+}
+.about-img-sec{
+  @apply relative top-[-222px] z-[-9]
+}
+.syllabus-banner {
+  @apply bg-no-repeat bg-cover w-[100%] h-[80vh] bg-bottom pt-[226px] pb-[300px] flex items-center justify-center
+}
+.syllabus-banner h2{
+  @apply text-7xl text-white text-center font-semibold drop-shadow-xl shadow-black
+}
+.syllabus-sec{
+  @apply bg-no-repeat bg-cover h-[1100px] flex  mt-[-345px] justify-center items-center
+}
+.syllbus-content-area p{
+  @apply text-[#174E81] text-xl mt-[-1rem]
+}
+.testimonial-sec .syllabus-sec{
+  @apply  mt-[-45px]
+}
+.syllbus-content-area img{
+  @apply mx-auto
+}
+.syllbus-hd-area{
+  @apply px-[150px]
+}
+.syllabus-sec-2{
+  @apply py-[100px]
+}
+.syllabus-banner{
+  background-image: url(./images/syllabusbg.png);
+}
+.syllabus-sec{
+  background-image: url(./images/bgabout.png);
+}
 @media(max-width: 1600px){
+  .banner{
+   @apply pt-[5rem]
+  }
+  .primary-hd.banner-hd-classes{
+    @apply text-2xl pt-2
+  }
 .footer-address-area p{
   @apply text-[1rem]
 }
+
   .accordion {
   @apply  w-[70%]
 }
@@ -596,20 +762,34 @@ img.cube21{
   @apply text-4xl
 }
 .section-2{
-  @apply pb-[100px] pt-[200px]
+  @apply pt-[115px]
 }
-
+.sec-content-area p{
+  @apply mt-[-4rem]
+}
 .main-clip{
   @apply mt-[-45rem]  scale-[0.9]
 }
 .section-2::after{
-  @apply h-[106px] w-[90%] top-[-32%]
+  @apply h-[106px] w-[90%] top-[-39%]
 }
 .skil-sec{
   @apply overflow-hidden
 }
 }
 @media(max-width: 1440px){
+  .book-img::after{
+    @apply translate-y-[-48%]
+  }
+  .potential-sec::after{
+    @apply top-[-95px] left-[-165px] w-[112%]
+  }
+  .contact-hd-area h3{
+    @apply text-[3rem] leading-[1.2]
+  }
+  .img1-area::after {
+    @apply scale-[0.6] left-[26%] h-[778px] w-[160%]
+}
   .light-hd.small-size{
     @apply text-2xl
   }
@@ -653,20 +833,41 @@ img.cube15{
 }
 }
 @media(max-width: 1366px){
+  .section-img-content {
+    @apply pt-[141px]
+}
   .img-sec{
     @apply h-[88vh]
   }
   .main-clip{
-   @apply right-[-2%] mt-[-47rem]
+   @apply right-[-2%] mt-[-45rem]
   }
   .section-2::after {
-    @apply top-[-28%]
+    @apply top-[-67%]
     w-[74%]
+}
+img.cube14{
+  @apply bottom-[11%]
+}
+.power-content-area{
+  @apply pt-[72px]
+}
+.ai-power-img{
+  @apply top-[-128px]
+}
+img.cube13{
+  @apply top-[-16%]
+}
+img.cube12{
+  @apply top-[38%]
+}
+img.cube9{
+  @apply bottom-[9%]
 }
 }
 @media(max-width: 1280px){
   .section-2::after{
-    height: 52px;
+   @apply h-[90px]
   }
   .accordion{
     @apply w-[100%]
@@ -675,11 +876,28 @@ img.cube15{
     @apply text-[3rem]
   }
   .section-2::after{
-    @apply top-[-25%]
+    @apply top-[-72%]
   }
+  .section-2 {
+    @apply pt-[50px]
+}
+.main-clip{
+  @apply mt-[-43rem]
+}
+.section-img-content{
+  @apply pt-[50px]
+}
 }
 @media(max-width: 1024px){
- 
+  .book-img::after{
+    @apply translate-y-[-72%]
+  }
+  .sec-content-area p, .power-content-area p{
+    @apply mt-[-2rem]
+  }
+  .img1-area::after {
+    @apply scale-[0.5] left-[13%] translate-x-[-33%] translate-y-[-49%] w-[182%]
+}
   .banner-row{
     @apply block w-[70%] m-auto
   }
@@ -724,10 +942,16 @@ img.cube15{
    @apply top-[-156px];
 }
 .inner-btn-area.skil-btn.enrol-btn{
- @apply w-[65%]
+ @apply w-[47%] py-[10px] px-[10px]
 }
 .potential-sec::after {
    @apply top-[-105px] left-[-10px]
+}
+.potential-sec .para{
+  @apply mt-[-1rem]
+}
+.potential-sec .para br{
+  @apply hidden
 }
 .potential-sec {
   @apply  pt-[291px]
@@ -757,17 +981,17 @@ img.cube15{
   @apply w-[22%]
 }
 .primary-hd{
-  @apply text-2xl 
+  @apply leading-[2.4rem]
 }
 .power-content-area .primary-hd br{
   @apply hidden
 }
 .main-clip{
-  @apply  scale-[0.6]   left-[11%] w-[100%] mt-[-40rem] 
+  @apply  scale-[0.6]   left-[5%] w-[107%] mt-[-39rem] 
 }
 
 .section-2::after{
-  @apply h-[60px] w-[78%] top-[-58%]
+  @apply h-[60px] w-[78%] top-[-82%]
 }
 .section-2{
   @apply pt-[0]
@@ -777,6 +1001,9 @@ img.cube15{
 }
 }
 @media(max-width: 768px){
+  .inner-text-btn {
+    @apply text-[0.9rem]
+}
   .inner-btn-area.skil-btn.enrol-btn {
     @apply   w-[71%]
 }
@@ -807,20 +1034,35 @@ img.cube15{
   }
 
 .main-clip {
-  @apply left-[-3%] mt-[-40rem] w-[136%] scale-[0.4]
+  @apply left-[-3%] mt-[-40rem] w-[148%] scale-[0.4]
+}
+.primary-hd{
+  @apply text-[2rem]
 }
 }
 @media(max-width: 767px){
+  .contact-hd-area h4{
+    @apply text-[2rem]
+  }
+  .sec-content-area .primary-hd{
+    @apply text-[2.5rem]
+  }
   .inner-btn-area.skil-btn.enrol-btn {
    @apply w-[44%]
 }
+.banner{
+  @apply pt-[5rem]
+}
+.banner-hd-classes {
+ @apply mt-[-2rem]
+}
+.section-img-content {
+  @apply pt-[0]
+}
   img.cube1, 
-img.cube2,
 img.cube3,
 img.cube4,
-img.cube5,
 img.cube6,
-img.cube7,
 img.cube8,
 img.cube9,
 img.cube10,
@@ -836,6 +1078,16 @@ img.cube19,
 img.cube20,
 img.cube21{
   @apply hidden
+}
+img.cube2, img.cube5{
+  @apply w-[10%]
+}
+img.cube2{
+  @apply bottom-[58%] 
+}
+img.cube7 {
+  @apply 
+  top-[35%] w-[20%]
 }
 .main-clip{
   @apply left-[-59%] w-[221%]
@@ -890,6 +1142,9 @@ img.cube21{
 @media(max-width: 375px){
   .main-clip {
     @apply  left-[-98%] scale-[0.3]
-    w-[289%]
+    w-[303%]
+}
+.inner-btn-area.skil-btn.enrol-btn {
+  @apply w-[58%] pt-[8px]
 }
 }

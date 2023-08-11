@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       shadowlg: '#707070'
     },
+    
   },
   plugins: [],
 }
