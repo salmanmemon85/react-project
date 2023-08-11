@@ -34,6 +34,9 @@ body{
 .item{
   font-family: 'Regular';
 }
+.and-text{
+  font-family: 'Regular' !important;
+}
 .item.syllabus-item:hover{
   @apply text-[unset]
 }
@@ -351,7 +354,7 @@ img.cube21 {
   @apply text-white text-2xl font-semibold
 }
 .inner-btn-area.skil-btn .inner-text-btn{
-  @apply font-[700] 
+  @apply font-[600] 
 }
 
 .arrow-icon-area{
@@ -666,6 +669,15 @@ img.sec-img{
   background-image: url(./images/bgabout.png);
 }
 @media(max-width: 1600px){
+  .banner-btn-area  .inner-text-btn{
+    @apply text-[1rem] w-[unset]
+  }
+  .section-img-content .inner-btn-area{
+    @apply w-[30%]
+  }
+  .potential-sec::after{
+    @apply top-[-88px]
+  }
   .banner{
    @apply pt-[5rem]
   }
@@ -703,7 +715,10 @@ img.sec-img{
 }
 .book-img {
    @apply  scale-[0.9]
-    right-[-121px] top-[-9px]
+    right-[-121px] top-[9px]
+}
+.book-img::after{
+  @apply translate-y-[-48%]
 }
 .ai-power-img{
      @apply  scale-[0.7]
@@ -741,7 +756,7 @@ img.cube3{
   @apply top-[-6%]
 }
 .ai-power-img{
-  @apply top-[-92px]
+  @apply top-[-76px]
 }
 .inner-btn-area.skil-btn.enrol-btn.power {
    @apply  w-[46%]
@@ -771,13 +786,23 @@ img.cube21{
   @apply mt-[-45rem]  scale-[0.9]
 }
 .section-2::after{
-  @apply h-[106px] w-[90%] top-[-39%]
+  @apply h-[106px] w-[90%] top-[-60%]
 }
 .skil-sec{
   @apply overflow-hidden
 }
 }
 @media(max-width: 1440px){
+  .main-clip{
+    @apply mt-[-41rem]
+  }
+
+  .section-2::after{
+    @apply top-[-52%]
+  }
+  .sec-content-area .primary-hd{
+    @apply text-[3.5rem]
+  }
   .book-img::after{
     @apply translate-y-[-48%]
   }
@@ -807,7 +832,10 @@ img.cube21{
   @apply top-[30px]
 }
 .ai-power-img {
-  @apply top-[-64px] left-[-17%]
+  @apply top-[-49px] left-[-17%]
+}
+.section-img-content .inner-btn-area{
+  @apply w-[40%]
 }
 .main-clip{
   @apply   scale-[0.7] w-[84%] right-[-6%]
@@ -889,6 +917,9 @@ img.cube9{
 }
 }
 @media(max-width: 1024px){
+  .section-img-content .inner-btn-area {
+   @apply  w-[42%]
+}
   .book-img::after{
     @apply translate-y-[-72%]
   }
@@ -1001,6 +1032,9 @@ img.cube9{
 }
 }
 @media(max-width: 768px){
+  .sec-content-area .primary-hd {
+   @apply text-[2.5rem]
+}
   .inner-text-btn {
     @apply text-[0.9rem]
 }
@@ -1041,6 +1075,12 @@ img.cube9{
 }
 }
 @media(max-width: 767px){
+  .section-img-content .inner-btn-area{
+    @apply w-[100%]
+  }
+  .para br{
+    @apply hidden
+  }
   .contact-hd-area h4{
     @apply text-[2rem]
   }
