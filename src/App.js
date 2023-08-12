@@ -7,6 +7,7 @@ import {  Route, Routes, } from 'react-router-dom';
 import About from './about';
 import Syllabus from './sylabus';
 import Testimonial from './testimonial';
+import Contact from './contact';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/syllabus" element={<Syllabus />} />
           <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       <Footer/>
       </>

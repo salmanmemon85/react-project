@@ -56,10 +56,10 @@ export default function Footer() {
                       </div>
                       <div>
                       <p>
-                       <strong>HEAD OFFICE - VISAKHAPATNAM</strong> 
-                        D No :27-R, B-196, Tarakarama layout, 
-                        Rushikonda, IT Surge, Visakhapatnam, 
-                        Andhra Pradesh 530045, India.  </p> 
+                       <strong>BRANCH OFFICE - KUWAIT</strong> 
+                        Jaber AI Mubarak, Street Block 04 
+                        Sharq district  Nouf Tower 16th floor, 
+                        Kuwait. </p> 
                         </div>
                     </div>
                 </div>

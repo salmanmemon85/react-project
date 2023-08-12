@@ -36,9 +36,7 @@ const openDropDownSyllabus = () => {
                   <button className='close-menu' onClick={openMenu}><i class="fa-solid fa-xmark"></i></button>
                     <ul className="list flex items-center justify-between">
                     {/* <li className="item" onClick={closeMenu}><a href="#">Home</a></li>
-                    <li className="item" onClick={closeMenu}><a href="#">About us</a></li>
-                    <li className="item" onClick={closeMenu}><a href="#">Syllabus</a></li>
-                    <li className="item" onClick={closeMenu}><a href="#">Testimonials</a></li> */}
+                    <li className="item" onClick={closeMenu}><a href="#">About us</a></li> */}
                     <li className="item"><a href="#"> <Link to="./" className="item" onClick={closeMenu}>
                       Home
                       </Link></a></li>
@@ -51,16 +49,27 @@ const openDropDownSyllabus = () => {
                         <i class="fa-solid fa-angle-down"></i>
                         </button>
                         <ul className={ activeSyllabus ? "drop-down-menu active" : "drop-down-menu"}>
-                            <li onClick={closeMenu}><a className="dropdown-item" href="#">Math</a></li>
-                            <li onClick={closeMenu}><a className="dropdown-item" href="#">Biology </a></li>
-                            <li onClick={closeMenu}><a className="dropdown-item" href="#">Physics  </a></li>
-                            <li onClick={closeMenu}><a className="dropdown-item" href="#">Chemistry  </a></li>
+                        <li> <Link to="./syllabus" className="dropdown-item" onClick={closeMenu}>
+                        Math
+                      </Link></li>
+                      <li> <Link to="./syllabus" className="dropdown-item" onClick={closeMenu}>
+                      Biology
+                      </Link></li>
+                      <li> <Link to="./syllabus" className="dropdown-item" onClick={closeMenu}>
+                      Physics
+                      </Link></li>
+                      <li> <Link to="./syllabus" className="dropdown-item" onClick={closeMenu}>
+                      Chemistry
+                      </Link></li>
+                           
                         </ul>
                      </li>
                       <li className="item"> <Link to="./testimonial" className="item" onClick={closeMenu}>
                       Testimonials
                       </Link></li>
-                        <li className="item" onClick={closeMenu}><a href="#">Contact</a></li>
+                      <li className="item"><a href="#">  <Link to="./contact" className="item" onClick={closeMenu}>
+                      Contact
+                      </Link></a></li>
                         <li className="">
                         <button className="dropdown-btn" type="button" onClick={openDropDown}>
                         <i className="fa-solid fa-user"></i>  Login as Student <i class="fa-solid fa-angle-down"></i>
@@ -68,7 +77,7 @@ const openDropDownSyllabus = () => {
                         <ul className={ active ? "drop-down-menu active" : "drop-down-menu"}>
                             <li onClick={closeMenu}><a className="dropdown-item" href="#">Student</a></li>
                             <li onClick={closeMenu}><a className="dropdown-item" href="#">Parent or Guardian </a></li>
-                            <li onClick={closeMenu}><a className="dropdown-item" href="#">Institution  </a></li>
+                            <li onClick={closeMenu}><a className="dropdown-item" href="#">Institution </a></li>
                         </ul>
 
                         </li>

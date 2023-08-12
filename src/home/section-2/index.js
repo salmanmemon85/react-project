@@ -168,7 +168,7 @@ function SectionSkil() {
             </div>
           </div>
           <div className="grid grid-cols-12">
-            <div className="col-span-5">
+            <div className="col-span-6">
               <div className="sec-content-area">
                 <h2 className="primary-hd  space-bottom">
                   Digital Learning <br /> Services
