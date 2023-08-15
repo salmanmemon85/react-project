@@ -30,7 +30,7 @@ body{
     font-family: 'UltraLight';
   } */
 .item{
-  @apply text-lg uppercase transition ease-in-out delay-150 font-normal cursor-pointer text-black mr-[44px]
+  @apply text-[20px] uppercase transition ease-in-out delay-150 font-normal cursor-pointer text-black mr-[27px]
 }
 .item{
   font-family: 'Regular';
