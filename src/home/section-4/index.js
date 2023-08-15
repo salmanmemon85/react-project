@@ -14,7 +14,7 @@ return (
    <img src={cube7} alt='' className='cube21'/>
 
    <div className="container mx-auto">
-      <div className='grid grid-cols-12 flex justify-end items-center relative'>
+      <div className='grid grid-cols-12 flex justify-end items-center '>
         <div className='col-span-6 sec-2-img'>
             <div className='ai-power-img'>
                 <img src={img3}/>

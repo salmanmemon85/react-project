@@ -4,14 +4,30 @@ import about1 from "../../images/about1.png"
 import about2 from "../../images/about2.png" 
 import about3 from "../../images/about3.png" 
 import Banner from '../../component/banner'
+import cube5 from "../../images/cube5.png"
+import cube1 from "../../images/cube1.png"
+import cube4 from "../../images/cube4.png"
+import cube3 from "../../images/cube3.png"
+import cube6 from "../../images/cube6.png"
+import cube12 from "../../images/cube12.png"
+import cube16 from "../../images/cube16.png"
+
+
 
 export default function AboutBanner() {
   return (
     <>
-    <div className='about-main-banner'>
+    <div className='about-main-banner relative'>
+    <img src={cube1} alt='' className='cube1'/>
+    <img src={cube5} alt='' className='cube5'/>
+    <img src={cube4} alt='' className='cube4'/>
+    <img src={cube3} alt='' className='cube3'/>
+
     <Banner img={about1} heading="About" span="Us" span2="Every Child" heading2="Special Attention For"/>
     </div>
         <section className='about-sec-1'>
+          <img src={cube6} alt='' className='cube6'/>
+
             <div className='container mx-auto'>
                 <div className='grid grid-cols-12 flex justify-between items-center'>
                      <div className='col-span-6'>
@@ -43,7 +59,12 @@ export default function AboutBanner() {
         <section className='about-img-sec'>
             <img src={about3} alt=''/>
         </section>
-        <section className='about-sec'>
+        <section className='about-sec relative'>
+        <img src={cube12} alt="" className="cube12" />
+        <img src={cube5} alt='' className='cube5'/>
+        <img src={cube3} alt='' className='cube3'/>
+        <img src={cube16} alt="" className="cube16" />
+
             <div className='container mx-auto'>
                 <div className='grid grid-cols-10 flex justify-center'>
                     <div className='col-span-10'>

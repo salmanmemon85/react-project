@@ -2,8 +2,18 @@ import React from 'react'
 import Banner from '../../component/banner'
 import Design from '../../component/design'
 import testimg from "../../images/test1.png"
+import Contact from "../../home/contact";
 import Testimonial from '../../component/testimonial'
 import testimg1 from "../../images/testiimg.png"
+import cube5 from "../../images/cube5.png"
+import cube1 from "../../images/cube1.png"
+import cube4 from "../../images/cube4.png"
+import cube10 from "../../images/cube10.png"
+import cube8 from "../../images/cube8.png"
+import cube15 from "../../images/cube15.png"
+import cube16 from "../../images/cube16.png"
+import cube12 from "../../images/cube12.png"
+import cube3 from "../../images/cube3.png"
 const testimonials = [
   {
     img: testimg1,
@@ -56,7 +66,9 @@ const testimonials = [
 export default function TestimonialBanner() {
   return (
     <>
-    <div className='testimonial'>
+    <div className='testimonial relative'>
+    <img src={cube5} alt='' className='cube5'/>
+    <img src={cube3} alt='' className='cube3'/>
       <Banner img={testimg}
       heading="Testimonials"
       span2="Math, Physics, Biology & Physics"
@@ -81,7 +93,13 @@ export default function TestimonialBanner() {
     </>}
     />
     </div>
-    <section className='testimonial-section'>
+    <section className='testimonial-section syllabus-sec-2'>
+    <img src={cube12} alt="" className="cube12" />
+        <img src={cube10} alt="" className="cube10" />
+        <img src={cube8} className='cube8'/>
+        <img src={cube15} alt="" className="cube15" />
+        <img src={cube16} alt="" className="cube16" />
+        <img src={cube3} alt='' className='cube3'/>
             <div className='container mx-auto'>
                 <div className='grid grid-cols-12 flex justify-between'>
                   {testimonials.map((item) => {
@@ -97,7 +115,7 @@ export default function TestimonialBanner() {
                 </div>
             </div>
         </section>
-    
+        <Contact />
     </>
   )
 }

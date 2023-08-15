@@ -5,6 +5,15 @@ import syllbus2 from "../../images/syllabus2.png"
 import syllbus3 from "../../images/syllabus3.png"
 import syllbus4 from "../../images/sylllabus3.png"
 import Design from "../../component/design"
+import cube6 from "../../images/cube6.png"
+import cube1 from "../../images/cube1.png"
+import cube10 from "../../images/cube10.png"
+import cube8 from "../../images/cube8.png"
+import cube15 from "../../images/cube15.png"
+import cube16 from "../../images/cube16.png"
+import cube12 from "../../images/cube12.png"
+import cube3 from "../../images/cube3.png"
+
 export default function SyllabusBanner() {
   return (
     <>
@@ -17,6 +26,9 @@ export default function SyllabusBanner() {
           </div>
         </div>
       </section>
+      <section className="relative syllabus">
+      <img src={cube6} alt='' className='cube6'/>
+      <img src={cube1} alt='' className='cube1'/>
            <Design
             title={<>Digital Learning <span className="yello-text"> Design </span> is Our Thing</>}
             subTitle={<>
@@ -32,10 +44,18 @@ export default function SyllabusBanner() {
                             This advanced system is designed to closely replicate the format and difficulty level of actual <br/> exams, enabling you to build familiarity and boost your confidence.
             </>}
             />
+            </section>
         <section className="syllabus-sec-2">
+        <img src={cube12} alt="" className="cube12" />
+        <img src={cube10} alt="" className="cube10" />
+        <img src={cube8} className='cube8'/>
+        <img src={cube15} alt="" className="cube15" />
+        <img src={cube16} alt="" className="cube16" />
+        <img src={cube3} alt='' className='cube3'/>
+
             <div className="container mx-auto">
-                <div className="grid grid-cols-12 flex items-center justify-center mb-5">
-                    <div className="col-span-6">
+                <div className="grid grid-cols-10 flex items-center justify-center mb-5">
+                    <div className="col-span-5">
                         <div className="text-center syllbus-content-area">
                             <img src={syllbus2} alt=""/>
                             <div className="mt-5  syllbus-hd-area">
@@ -46,7 +66,7 @@ export default function SyllabusBanner() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-5">
                         <div className="text-center syllbus-content-area">
                             <img src={syllbus4} alt=""/>
                             <div className="mt-5 syllbus-hd-area">
@@ -57,8 +77,8 @@ export default function SyllabusBanner() {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 flex items-center justify-center">
-                    <div className="col-span-6">
+                <div className="grid grid-cols-10 flex items-center justify-center">
+                    <div className="col-span-5">
                         <div className="text-center syllbus-content-area">
                             <img src={syllbus3} alt=""/>
                             <div className="mt-5  syllbus-hd-area">
@@ -68,7 +88,7 @@ export default function SyllabusBanner() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-5">
                         <div className="text-center syllbus-content-area">
                             <img src={syllbus1} alt=""/>
                             <div className="mt-5 syllbus-hd-area">

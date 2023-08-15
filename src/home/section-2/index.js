@@ -174,7 +174,7 @@ function SectionSkil() {
                   Digital Learning <br /> Services
                 </h2>
                 <p>
-                  The leading e-learning platform designed to help you unleash
+                  The leading e-learning platform designed to help you <br/> unleash
                   your full potential.
                 </p>
                 <div className="inner-btn-area skil-btn enrol-btn">
@@ -195,7 +195,7 @@ function SectionSkil() {
           <div className="grid grid-cols-12 flex justify-content-between items-center">
             <div className="col-span-6">
               <div className=" relative z-[999]">
-                <h2 className="primary-hd light-hd space-bottom">
+                <h2 className="primary-hd light-hd space-bottom chose-skill">
                   Why Choose SkillCompute{" "}
                 </h2>{" "}
                 <br />

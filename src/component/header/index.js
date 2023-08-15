@@ -34,7 +34,7 @@ const openDropDownSyllabus = () => {
               <div className="col-span-9 span-md-12 span-sm-12">
                 <div className={isopen ? "nav-bar active" : "nav-bar"}>
                   <button className='close-menu' onClick={openMenu}><i class="fa-solid fa-xmark"></i></button>
-                    <ul className="list flex items-center justify-between">
+                    <ul className="list flex items-center justify-end">
                     {/* <li className="item" onClick={closeMenu}><a href="#">Home</a></li>
                     <li className="item" onClick={closeMenu}><a href="#">About us</a></li> */}
                     <li className="item"><a href="#"> <Link to="./" className="item" onClick={closeMenu}>
