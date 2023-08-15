@@ -141,7 +141,7 @@ body{
 }
 
 .book-img::after {
-  @apply content-[""] w-[229%] h-[800px] absolute bg-no-repeat top-[50%] z-[-9] left-[50%]  transition ease-in-out 
+  @apply content-[""] w-[229%] h-[800px] absolute bg-no-repeat top-[50%] z-[-9] left-[50%]  transition ease-in-out
    translate-x-[-24%] translate-y-[-52%]
 }
 .book-img::after {
@@ -239,7 +239,7 @@ body{
 }
 
 .clip-path-2 h3,
- .clip-path-4 h3, 
+ .clip-path-4 h3,
  .clip-path-3 h3,
  .clip-path-1 h3 {
   @apply absolute top-[50%] left-[50%] text-[50px] font-semibold text-white z-[9999] rotate-[-16deg] translate-y-[-50%] translate-x-[-50%]
@@ -340,10 +340,10 @@ img.cube21 {
   @apply mt-[-3rem]
 }
 .light-hd, .hd-secondary.small-size{
-  @apply text-5xl leading-[60px] 
+  @apply text-5xl leading-[60px]
 }
 .small-size{
-  @apply text-4xl 
+  @apply text-4xl
 }
 .main-banner-login-area{
   @apply px-[140px] py-[10px]
@@ -434,7 +434,7 @@ img.sec-img{
   @apply  absolute top-[unset] right-[unset] bottom-[0px] left-[0] translate-x-[43%]
 }
 .sec-content-area{
-  @apply pt-[339px] relative z-[99999] 
+  @apply pt-[339px] relative z-[99999]
 }
 .sec-content-area p{
   @apply text-[1.5rem]  mt-[-5rem]
@@ -461,7 +461,7 @@ img.sec-img{
   @apply mt-[-4rem]
 }
 .potential-sec::after {
-  @apply content-['']  absolute top-[-46px] left-[-121px] h-[348px] w-[110%] 
+  @apply content-['']  absolute top-[-46px] left-[-121px] h-[348px] w-[110%]
  }
 .potential-sec::after {
   background-image: url(./images/bg2.png);
@@ -495,7 +495,7 @@ img.sec-img{
   @apply pt-[50px] pb-[18px]
 }
 .contact-hd-area h4{
-  @apply text-5xl text-white font-["ExtraBold"] mb-5 
+  @apply text-5xl text-white font-["ExtraBold"] mb-5
 }
 .accordion .inner-btn-area .inner-text-btn {
   @apply text-[#175081]
@@ -510,7 +510,7 @@ img.sec-img{
   @apply text-2xl text-white font-normal mb-5
 }
 .contact::after {
-  @apply content-['']  absolute top-[-97px] left-[-10px] h-[348px] w-[101%]  bg-no-repeat bg-cover 
+  @apply content-['']  absolute top-[-97px] left-[-10px] h-[348px] w-[101%]  bg-no-repeat bg-cover
  }
 .contact:after {
     background-image: url(./images/bg3.png);
@@ -589,7 +589,7 @@ img.sec-img{
     @apply flex items-center  mb-[30px]
   }
   .input-area>div{
-    @apply w-[48%] flex  bg-white mr-4 items-center 
+    @apply w-[48%] flex  bg-white mr-4 items-center
   }
   .contact-form{
     @apply pl-[85px] pb-[60px]
@@ -601,7 +601,7 @@ img.sec-img{
     @apply text-xl text-white
   }
   .contact-input input, .contact-input textarea{
-    @apply w-[100%] outline-none	
+    @apply w-[100%] outline-none
   }
   .input-area.message>div {
     @apply w-[100%]
@@ -619,7 +619,7 @@ img.sec-img{
     @apply w-[100%]
 }
 .open-menu, .close-menu{
-  @apply hidden 
+  @apply hidden
 }
 .power-content-area p{
   @apply mt-[-3rem]
@@ -671,7 +671,7 @@ img.cube16 {
   @apply top-[100%] left-[41px] z-[99]
 }
 .about-sec img.cube12 {
-  @apply top-[32%] right-[8%] 
+  @apply top-[32%] right-[8%]
 }
 .about-main-banner  img.cube4 {
   @apply top-[100%] left-[44%]
@@ -689,7 +689,7 @@ img.cube16 {
   @apply pt-[160px] pb-[100px]
 }
 .syllabus-banner {
-  @apply bg-no-repeat bg-cover  bg-bottom pt-[312px] pb-[435px] 
+  @apply bg-no-repeat bg-cover  bg-bottom pt-[312px] pb-[435px]
 }
 .syllabus-banner h2{
   @apply text-7xl text-white text-center font-semibold drop-shadow-xl shadow-black
@@ -698,7 +698,7 @@ img.cube16 {
   @apply bg-no-repeat bg-cover h-[1018px] flex  mt-[-345px] justify-center items-center
 }
 .syllbus-content-area p{
-  @apply text-[#175081] text-xl mt-[-1rem] font-normal 
+  @apply text-[#175081] text-xl mt-[-1rem] font-normal
 }
 .testimonial-sec .syllabus-sec{
   @apply  mt-[-45px]
@@ -736,7 +736,7 @@ img.cube16 {
   background-image: url(./images/testbg.png);
 }
 .testimonial-section .testimonial-area::after{
-  @apply content-[""] absolute bottom-[11%]  h-[76px] w-[50px] bg-no-repeat left-[46%] 
+  @apply content-[""] absolute bottom-[11%]  h-[76px] w-[50px] bg-no-repeat left-[46%]
 }
 .test-parent-area{
   @apply transition ease-in-out
@@ -769,10 +769,10 @@ img.cube16 {
   @apply px-[70px]
 }
 .syllabus-sec-2 img.cube10 {
- @apply  right-[16px] top-[-12%] 
+ @apply  right-[16px] top-[-12%]
 }
 .syllabus-sec-2 img.cube8 {
-  @apply  left-[2%] top-[36%] 
+  @apply  left-[2%] top-[36%]
 }
 .syllabus-sec-2 img.cube15{
   @apply bottom-[4%]
@@ -784,11 +784,11 @@ img.cube16 {
   @apply top-[53%] right-[3%]
 }
 .syllabus-sec-2 img.cube3 {
-  @apply top-[84%] right-[0%] 
+  @apply top-[84%] right-[0%]
 }
 .testimonial .banner{
   @apply pt-[13rem]
-} 
+}
 .testimonial-sec .syllabus-sec{
   @apply pt-[100px]
 }
@@ -861,7 +861,7 @@ img.cube16 {
     z-[99999]
 }
 .main-banner-login-area{
-  @apply px-[20px] 
+  @apply px-[20px]
 }
 .book-img {
    @apply  scale-[0.9]
@@ -877,9 +877,9 @@ img.cube16 {
   @apply pt-[302px] overflow-hidden
 }
 .primary-hd{
-  @apply text-5xl 
+  @apply text-5xl
 }
-img.cube1, 
+img.cube1,
 img.cube2,
 img.cube3,
 img.cube4,
@@ -896,7 +896,7 @@ img.cube14,
 img.cube15,
 img.cube16,
 img.cube17,
-img.cube18, 
+img.cube18,
 img.cube19,
 img.cube20,
 img.cube21{
@@ -975,7 +975,7 @@ img.cube21{
   @apply text-[65px]
 }
 .syllabus-sec{
-  @apply h-[736px] 
+  @apply h-[736px]
 }
 .syllabus-sec::after{
   @apply h-[300px] bottom-[-81px]
@@ -986,7 +986,7 @@ img.cube21{
 }
 @media(max-width: 1440px){
   .about-sec-1 .para{
-    @apply text-[1.4rem] 
+    @apply text-[1.4rem]
   }
   .about-main-banner img.cube4{
     @apply top-[90%] left-[41%]
@@ -998,7 +998,7 @@ img.cube21{
     @apply py-[16px] px-[20px]
   }
   .syllabus-sec{
-    @apply mt-[-246px] h-[766px]
+    @apply mt-[-246px]
   }
   .syllabus-sec{
     @apply bg-center
@@ -1077,7 +1077,7 @@ img.cube15{
   @apply text-[2.7rem]
 }
 .img1-area{
-  @apply right-[-51px] scale-[1.3] top-[-135px] 
+  @apply right-[-51px] scale-[1.3] top-[-135px]
 }
 .light-hd, .hd-secondary.small-size{
   @apply text-[2rem]
@@ -1088,7 +1088,10 @@ img.cube15{
 }
 @media(max-width: 1366px){
   .item{
-    @apply mr-[20px]
+    @apply mr-[19px]
+  }
+  .skil-sec{
+    @apply pt-[17rem]
   }
   .container{
     max-width: 1200px;
@@ -1101,7 +1104,7 @@ img.cube15{
     @apply left-[39%]
   }
   .img1-area{
-    @apply overflow-hidden 
+    @apply overflow-hidden top-[-122px] scale-[1.1]
   }
   .img1-area::after{
     @apply  left-[33%] translate-y-[-47%]
@@ -1119,10 +1122,10 @@ img.cube15{
     @apply h-[88vh]
   }
   .main-clip{
-   @apply right-[-9%] top-[60px] w-[90%]
+   @apply right-[-7%] top-[37px] w-[90%]
   }
   .section-2::after {
-    @apply top-[-47%]
+    @apply top-[-63%]
     w-[74%]
 }
 .book-img{
@@ -1155,15 +1158,20 @@ img.cube9{
 .potential-sec .para br{
   @apply hidden
 }
-.para{
-  @apply text-[1rem]
-}
-.sec-content-area .inner-btn-area.skil-btn, .power-content-area .inner-btn-area.skil-btn, 
+
+.sec-content-area .inner-btn-area.skil-btn, .power-content-area .inner-btn-area.skil-btn,
 .inner-btn-area.skil-btn.enrol-btn.power, .inner-btn-area.skil-btn{
   @apply px-[30px] h-[60px] w-[240px]
 }
+.para{
+  @apply text-[1rem]
+}
+.syllabus-sec{
+  @apply mt-[-300px]
+}
 }
 @media(max-width: 1280px){
+
   img.cube12 {
   @apply top-[66%] right-[19%]
 }
@@ -1189,9 +1197,9 @@ img.cube9{
   @apply pt-0
 }
   .img1-area::after{
-    @apply scale-[0.6] 
+    @apply scale-[0.6]
   }
- 
+
 
   .contact-hd-area h3{
     @apply text-[3rem]
@@ -1353,7 +1361,7 @@ img.cube9{
   @apply hidden
 }
 .main-clip{
-  @apply  scale-[0.6]   left-[5%] w-[107%] mt-[-39rem] 
+  @apply  scale-[0.6]   left-[5%] w-[107%] mt-[-39rem]
 }
 
 .section-2::after{
@@ -1368,7 +1376,7 @@ img.cube9{
 }
 @media(max-width: 768px){
   .syllabus-sec-2{
-   @apply py-[0]   
+   @apply py-[0]
   }
   .syllabus-sec-2 .grid{
     @apply block
@@ -1377,7 +1385,7 @@ img.cube9{
     @apply mb-5
   }
   .syllbus-hd-area{
-    
+
     @apply px-[0px]
   }
   .about-sec-1{
@@ -1491,7 +1499,7 @@ img.cube9{
 .section-img-content {
   @apply pt-[0]
 }
-  img.cube1, 
+  img.cube1,
 img.cube3,
 img.cube4,
 img.cube6,
@@ -1505,7 +1513,7 @@ img.cube14,
 img.cube15,
 img.cube16,
 img.cube17,
-img.cube18, 
+img.cube18,
 img.cube19,
 img.cube20,
 img.cube21{
@@ -1515,10 +1523,10 @@ img.cube2, img.cube5{
   @apply w-[10%]
 }
 img.cube2{
-  @apply bottom-[58%] 
+  @apply bottom-[58%]
 }
 img.cube7 {
-  @apply 
+  @apply
   top-[35%] w-[20%]
 }
 .main-clip{
