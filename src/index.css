@@ -945,6 +945,9 @@ img.cube16 {
   @apply top-[71%] z-[999] left-[20%]
 }
 @media(max-width: 1600px){
+  .syllabus-banner.contact-banner img.cube3 {
+   @apply top-[11%]
+}
   .testimonial-section{
     @apply pb-[115px]
   }
@@ -1257,6 +1260,9 @@ img.cube15{
 }
 }
 @media(max-width: 1366px){
+ .contact-sec-area .contact img {
+   @apply h-[1335px]
+}
   .contact-form .inner-btn-area.skil-btn{
     @apply px-[36px]
   }
@@ -1353,6 +1359,9 @@ img.cube9{
 }
 }
 @media(max-width: 1280px){
+  .contact-sec-area .contact img {
+   @apply h-[1259px]
+}
   .syllabus-sec {
   @apply   h-[685px]
 }
@@ -1477,7 +1486,7 @@ img.cube9{
     @apply  shadow-lg  transition ease-in-out  shadow-[#70707040] fixed h-[100%] bg-white z-[99999] top-[0] left-[-100%] w-[60%]
   }
   .nav-bar.active{
-    @apply  left-[0%] transition ease-in-out
+    @apply  left-[0%] transition ease-in-out z-[99999999999999999999999999]
   }
   .list {
     @apply block py-8 px-8
@@ -1684,6 +1693,7 @@ img.cube9{
 .section-img-content {
   @apply pt-[0]
 }
+.contact-sec img.cube7,
   img.cube1,
 img.cube3,
 img.cube4,
@@ -1709,6 +1719,15 @@ img.cube2, img.cube5{
 }
 img.cube2{
   @apply bottom-[58%]
+}
+.contact-sec .flex.justify-center{
+  @apply block
+}
+.syllabus-banner.contact-banner{
+  @apply bg-center pt-[200px]
+}
+.syllabus-banner h2{
+  @apply text-[55px]
 }
 img.cube7 {
   @apply
