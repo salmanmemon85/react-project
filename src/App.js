@@ -8,6 +8,7 @@ import About from './about';
 import Syllabus from './sylabus';
 import Testimonial from './testimonial';
 import Contact from './contact';
+import Login from './login';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
           <Route path="/syllabus" element={<Syllabus />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+
         </Routes>
       <Footer/>
       </>

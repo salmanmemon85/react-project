@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../index.css';
-import img3 from "../../images/img3.png"
+import contactbefore from "../../images/contactbefore.png"
 import Accordion from '../../component/accordian';
 
 const accordionData = [
@@ -33,10 +33,10 @@ function Contact() {
 return (
 <>
 <section className="contact" >
+  <img src={contactbefore} alt=''/>
    <div className="container mx-auto">
       <div className='grid grid-cols-12 flex justify-between  relative contact-row'>
-          <div className='col-span-6'>
-
+          <div className='col-span-6 relative z-[99]'>
             <div className='contact-hd-area'>
                 <h3>Unlock the door <br/>
                 to boundless </h3>

@@ -7,6 +7,8 @@ import Testimonial from '../../component/testimonial'
 import testimg1 from "../../images/testiimg.png"
 import cube5 from "../../images/cube5.png"
 import cube1 from "../../images/cube1.png"
+import cube6 from "../../images/cube6.png"
+
 import cube4 from "../../images/cube4.png"
 import cube10 from "../../images/cube10.png"
 import cube8 from "../../images/cube8.png"
@@ -75,8 +77,9 @@ export default function TestimonialBanner() {
       heading2="Empowering Young Minds with" 
       heading3="Classes for Grades 6th to 10th"/>
       </div>
-    <div className='testimonial-sec'>
-  
+    <div className='testimonial-sec relative'>
+    <img src={cube6} alt='' className='cube6'/>
+      <img src={cube1} alt='' className='cube1'/>
     <Design
     title={<>Digital Learning <span className="yello-text"> Design </span> is Our Thing</>}
     subTitle={<>
@@ -96,7 +99,7 @@ export default function TestimonialBanner() {
     <section className='testimonial-section syllabus-sec-2'>
     <img src={cube12} alt="" className="cube12" />
         <img src={cube10} alt="" className="cube10" />
-        <img src={cube8} className='cube8'/>
+        <img src={cube8} className='test-cube-15'/>
         <img src={cube15} alt="" className="cube15" />
         <img src={cube16} alt="" className="cube16" />
         <img src={cube3} alt='' className='cube3'/>

@@ -17,7 +17,10 @@
   src: url("./font/Radomir\ Tinkov\ \ QanelasSoftSemiBold.ttf");
 }
 
-
+@font-face {
+  font-family: 'bold';
+  src: url("./font/Radomir\ Tinkov\ \ QanelasSoftBold.ttf");
+}
 body{
   @apply overflow-x-hidden
 }
@@ -31,6 +34,9 @@ body{
   } */
 .item{
   @apply text-[20px] uppercase transition ease-in-out delay-150 font-normal cursor-pointer text-black mr-[27px]
+}
+.list{
+  @apply justify-end
 }
 .item{
   font-family: 'Regular';
@@ -393,7 +399,7 @@ img.sec-img{
   @apply text-[1.5rem] font-normal	 text-white mt-5
 }
 .inner-btn-area.skil-btn{
-  @apply   mt-[4.5rem] cursor-pointer shadow-xl shadow-[#00000026]
+  @apply   mt-[3.5rem] cursor-pointer shadow-xl shadow-[#00000026]
 }
 
 .inner-text-btn{
@@ -516,14 +522,19 @@ img.sec-img{
     background-image: url(./images/bg3.png);
 }
 .contact::before {
-  @apply content-['']  absolute top-[-100px] left-[-165px] h-[1700px] w-[60%]  bg-[#1CC6F3] z-[] rounded-[100%]
+  @apply content-['']  absolute top-[-0] left-[-165px] h-[1540px] w-[540px]  bg-[#1CC6F3] 
  }
-
+ .contact img{
+  @apply absolute w-[620px] left-[17%] top-[-5px] h-[1262px] bg-no-repeat bg-cover
+ }
+ /* .contact-hd-area::after{
+  background-image: url(./images/contactbefore.png);
+ } */
 .footer{
   @apply bg-[#EDA825] pb-[100px] relative
 }
 .footer::after{
-  @apply content-[''] absolute left-[-1px] top-[-265px] bg-no-repeat bg-cover h-[308px] w-[100%]
+  @apply content-[''] absolute left-[-1px] top-[-265px] bg-no-repeat bg-cover h-[308px] w-[100%] z-[9999]
 }
 .footer::after {
   background-image: url(./images/bg4.png);
@@ -568,7 +579,7 @@ img.sec-img{
   @apply text-lg text-black m-0
 }
 .form-area{
-  @apply pl-[80px]
+  @apply pl-[40px]
 }
 .accordion-content{
   @apply h-[0] bg-white overflow-hidden transition ease-in-out rounded-lg
@@ -577,7 +588,7 @@ img.sec-img{
   @apply text-lg font-normal text-black m-0
 }
 .accordion {
-  @apply bg-white rounded-lg w-[60%]
+  @apply bg-white rounded-lg w-[80%] mb-[25px]
 }
 .accordion-content.active{
   @apply bg-white  h-[200px] overflow-y-auto p-4
@@ -592,7 +603,7 @@ img.sec-img{
     @apply w-[48%] flex  bg-white mr-4 items-center
   }
   .contact-form{
-    @apply pl-[85px] pb-[60px]
+    @apply pl-[40px] pb-[60px]
   }
   .icon-contact-area{
     @apply bg-[#EDA825] w-[80px] h-[80px] flex items-center justify-center mr-2
@@ -607,10 +618,10 @@ img.sec-img{
     @apply w-[100%]
   }
   .input-area.message textarea{
-    @apply h-[190px] pt-[15px]
+    @apply h-[170px] pt-[15px]
   }
   .input-area.message .icon-contact-area{
-    @apply h-[200px] w-[96px] items-start pt-[15px]
+    @apply h-[176px] w-[96px] items-start pt-[15px]
   }
   .contact-hd-area.form-area{
     @apply pb-[60px]
@@ -662,7 +673,7 @@ img.sec-img{
   @apply right-[7%] z-[999]  top-[74%]
 }
 img.cube16 {
-  @apply left-[48%]  top-[68%]
+  @apply left-[48%]  top-[85%]
 }
 .about-sec img.cube5 {
   @apply left-[3%]  top-[70%]
@@ -672,6 +683,9 @@ img.cube16 {
 }
 .about-sec img.cube12 {
   @apply top-[32%] right-[8%]
+}
+.about-sec img.cube16{
+  @apply top-[66%]
 }
 .about-main-banner  img.cube4 {
   @apply top-[100%] left-[44%]
@@ -692,7 +706,7 @@ img.cube16 {
   @apply bg-no-repeat bg-cover  bg-bottom pt-[312px] pb-[435px]
 }
 .syllabus-banner h2{
-  @apply text-7xl text-white text-center font-semibold drop-shadow-xl shadow-black
+  @apply text-[83px] text-white text-center font-["ExtraBold"] drop-shadow-xl shadow-black
 }
 .syllabus-sec{
   @apply bg-no-repeat bg-cover h-[1018px] flex  mt-[-345px] justify-center items-center
@@ -795,13 +809,158 @@ img.cube16 {
 .testimonial-sec  .syllabus-sec::after{
   @apply bottom-[-71px]
 }
+.testimonial-section.syllabus-sec-2 img.cube10 {
+  @apply top-[1%] right-[2%]
+}
+.testimonial-section.syllabus-sec-2 .test-cube-15 {
+ @apply absolute top-[35%] left-[2%] z-[-99999]
+}
+.testimonial-section.syllabus-sec-2 img.cube15 {
+  @apply bottom-[13%] left-[3%]
+}
+.testimonial-section.syllabus-sec-2 img.cube12 {
+  @apply top-[48%] right-[3%]
+}
+.testimonial-section.syllabus-sec-2 img.cube3 {
+  @apply top-[82%] right-[3%]
+}
+.testimonial-sec img.cube6 {
+  @apply top-[13%] right-[2%] z-[999]
+}
+.testimonial-sec img.cube1 {
+  @apply top-[31px] left-[15%] z-[99999]
+}
+.contact-sec{
+  background-image: url(./images/contactbg2.png);
+}
+.contact-sec{
+  @apply bg-no-repeat relative bg-cover bg-center pb-[100px] pt-[200px] z-[9999] mt-[-26rem] h-[800px] 
+}
+.contact-sec-area .contact{
+  @apply pt-[350px]
+}
+.contact-sec-area .contact::after{
+  @apply z-[-999]
+}
+.contact-sec-area .contact{
+  @apply mt-[-20rem]
+}
+.contact-btn {
+  @apply bg-white rounded-[10px] w-[362px] h-[100px] px-[25px] py-[20px] mb-[20px] shadow-lg shadow-[#00000021]  transition ease-in-out cursor-pointer mr-[20px]
+}
+.contact-btn:hover{
+  @apply bg-[#3066FB]
+}
+.contact-btn:hover .inner-text-btn {
+  @apply text-[#fff]
+}
+.contact-btn, .arrow-icon-area {
+  box-shadow: 0px 4px 10px #9999999e;
+}
+.contact-btn.instituion{
+  @apply mx-auto
+}
+.contact-btn.parent{
+  @apply mr-0
+}
+.login-sec{
+  @apply relative h-[100vh] pt-[200px]
+}
+.login-sec h2{
+  @apply text-[64px] text-white uppercase font-["bold"]
+}
+.login-sec h2{
+  text-shadow: 6px 5px 10px #00000087;
+}
+.login-sec h3{
+  @apply text-[45px] text-[#EDA825] uppercase font-["ExtraBold"]
+}
+.login-sec h2{
+  text-shadow: 6px 5px 10px #00000087;
+}
+.login-area{
+  @apply mt-[35px]
+}
+.login-area .contact-btn{
+  box-shadow: 6px 5px 10px #00000052;
+}
+.login-sec::before{
+  @apply content-[""] bg-[#175081] h-[1080px] w-[34%] absolute left-0 top-0 z-[-999]
+}
+.login-area .contact-btn{
+  @apply w-[80%] h-[80px]
+}
+.login-form{
+  @apply pl-[160px]
+}
+.login-form h4{
+  @apply text-[50px] font-["ExtraBold"] text-[#175081] 
+}
+.login-input-area{
+  @apply w-[100%] mx-auto 
+}
+.login-input-area {
+  box-shadow: 1px 7px 10px #00000029;
+}
+.login-form-btn{
+  @apply mt-16 flex items-center text-[20px] uppercase font-["bold"]
+}
+.login-form-btn img{
+  @apply ml-3 
+}
+.login-input-area .input-area{
+  @apply w-[80%] m-0
+}
+.login-input-area .input-area input{
+  @apply w-[100%]  outline-none
+}
+.forget-form-btn{
+   @apply text-[20px] font-["Regular"]
+}
+.forget-form-btn.dont-have{
+  @apply text-[#175081]
+}
+.signup{
+  @apply font-["bold"]
+}
+.syllabus-banner.contact-banner img.cube5{
+  @apply top-[16%] z-[999]
+}
+.syllabus-banner.contact-banner img.cube3{
+  @apply top-[6%] z-[999]
+}
+.contact-sec img.cube6{
+  @apply top-[14%] z-[999]
+}
+.contact-sec img.cube1{
+  @apply top-[0%] z-[999] left-[20%]
+}
+.contact-sec img.cube7{
+  @apply top-[40%] z-[999] left-[10%]
+}
+.contact-sec img.cube10{
+  @apply bottom-[13%] z-[999] right-[14%]
+}
+.contact-sec img.cube12{
+  @apply top-[71%] z-[999] left-[20%]
+}
 @media(max-width: 1600px){
+  .testimonial-section{
+    @apply pb-[115px]
+  }
+  .testimonial-sec  .syllabus-sec::after {
+   @apply bottom-[-128px]
+}
+  .contact img{
+    @apply w-[535px]
+  }
+  .list{
+    @apply justify-between
+  }
   .contact::after{
-    @apply top-[-141px]
+    @apply top-[-116px]
   }
-  .item{
-    @apply mr-[37px]
-  }
+
   .container{
     max-width: 1400px;
     width: 100%;
@@ -840,9 +999,7 @@ img.cube16 {
 .skil-sec{
   @apply pt-[22rem] pb-[10rem]
 }
-  .accordion {
-  @apply  w-[70%]
-}
+
   .sec-img-area{
   @apply top-[-230px]
 }
@@ -930,7 +1087,7 @@ img.cube21{
   @apply right-[0]
 }
 .footer::after{
-  @apply h-[229px] top-[-194px]
+  @apply h-[269px] top-[-250px]
 }
 .light-hd{
   @apply text-4xl leading-[1.2]
@@ -954,10 +1111,10 @@ img.cube21{
   @apply text-[3rem]
 }
 .about-banner-area{
-  @apply right-[7%]
+  @apply right-[7%] h-[636px] w-[585px]
 }
 .about-content-area {
-  @apply pt-[186px]
+  @apply pt-[74px]
 }
 .about-main-banner img.cube1{
   @apply top-[114%]
@@ -974,6 +1131,9 @@ img.cube21{
 .about-content-area .primary-hd.space-bottom{
   @apply text-[65px]
 }
+.about-sec-1{
+  @apply h-[920px]
+}
 .syllabus-sec{
   @apply h-[736px]
 }
@@ -983,17 +1143,27 @@ img.cube21{
 .syllabus img.cube1 {
   @apply top-[0%] left-[21%]
 }
+.syllabus-sec-2 img.cube16{
+  @apply top-[97%]
 }
-@media(max-width: 1440px){
+}
+@media(max-width: 1440px){  
+  .syllabus-sec-2 img.cube10{
+    @apply top-[-8%]
+  }
+  .syllabus-sec {
+    @apply h-[779px]
+}
   .about-sec-1 .para{
     @apply text-[1.4rem]
   }
+  .contact img {
+  @apply  w-[486px]
+}
   .about-main-banner img.cube4{
     @apply top-[90%] left-[41%]
   }
-  .item{
-    @apply mr-[30px]
-  }
+
   .login-banner-btn{
     @apply py-[16px] px-[20px]
   }
@@ -1024,7 +1194,7 @@ img.cube21{
     @apply text-[3.5rem]
   }
   .book-img::after{
-    @apply translate-y-[-48%]
+    @apply translate-y-[-51%]
   }
   .potential-sec::after{
     @apply top-[-95px] left-[-165px] w-[112%]
@@ -1087,6 +1257,12 @@ img.cube15{
 }
 }
 @media(max-width: 1366px){
+  .contact-form .inner-btn-area.skil-btn{
+    @apply px-[36px]
+  }
+  .syllabus-sec::after{
+    @apply h-[246px]
+  }
   .item{
     @apply mr-[19px]
   }
@@ -1110,7 +1286,7 @@ img.cube15{
     @apply  left-[33%] translate-y-[-47%]
   }
   .section-img-content {
-    @apply pt-[141px]
+    @apply pt-[0]
 }
 .power-section{
   @apply pt-[100px]
@@ -1122,14 +1298,14 @@ img.cube15{
     @apply h-[88vh]
   }
   .main-clip{
-   @apply right-[-7%] top-[37px] w-[90%]
+   @apply right-[-5%] top-[92px] w-[90%]
   }
   .section-2::after {
-    @apply top-[-63%]
+    @apply top-[-49%]
     w-[74%]
 }
 .book-img{
-  @apply scale-[0.8] top-[-20px]
+  @apply scale-[0.8] top-[13px]
 }
 .book-img::after{
   @apply translate-y-[-45%]
@@ -1164,22 +1340,33 @@ img.cube9{
   @apply px-[30px] h-[60px] w-[240px]
 }
 .para{
-  @apply text-[1rem]
+  @apply text-[1.3rem]
 }
 .syllabus-sec{
   @apply mt-[-300px]
 }
+.sec-content-area{
+  @apply pt-[76px]
+}
+.contact img{
+  @apply top-[-12px]
+}
 }
 @media(max-width: 1280px){
-
+  .syllabus-sec {
+  @apply   h-[685px]
+}
+  .para{
+    @apply text-[1rem]
+  }
   img.cube12 {
   @apply top-[66%] right-[19%]
 }
   .book-img::after{
-    @apply top-[57%]
+    @apply top-[52%]
   }
   .book-img{
-    @apply top-[30px] scale-[0.7]
+    @apply top-[-17px] scale-[0.7]
   }
   .about-banner-area {
     @apply right-[4%] scale-[0.9] top-[-34px]
@@ -1220,11 +1407,9 @@ img.cube9{
     @apply pt-[140px]
 }
 .main-clip{
-  @apply mt-[-40rem]
+  @apply mt-[-45rem]
 }
-.section-img-content{
-  @apply pt-[50px]
-}
+
 }
 @media(max-width: 1024px){
   .syllabus-sec::after {
@@ -1258,7 +1443,7 @@ img.cube9{
    @apply  w-[48%]
 }
   .book-img::after{
-    @apply translate-y-[-77%]
+    @apply translate-y-[-73%]
   }
   .sec-content-area p, .power-content-area p{
     @apply mt-[-2rem]
