@@ -1,61 +1,72 @@
-import React from 'react'
-import login from ".././images/login.png"
-import { Link } from 'react-router-dom'
+import React, {useState} from 'react'
+
+import login1 from "../images/login1.png";
+import login2 from "../images/contact1.png";
+import cube3 from "../images/cube3.png";
+import cube1 from "../images/cube1.png";
+import Student from "./component/student";
+import Parents from './component/parents';
+import Institution from './component/institution';
+import { Link, Route, Routes } from 'react-router-dom';
+
 export default function Login() {
+  const [activeComponent, setActiveComponent] = useState(null);
+
+  const renderComponent = () => {
+    if (activeComponent === 'student') {
+      return <Student />;
+    } else if (activeComponent === 'parent') {
+      return <Parents />;
+    } else if (activeComponent === 'institution') {
+      return <Institution />;
+    }
+    return <Student />;
+  };
   return (
     <>
     <section className='login-sec'>
+    <img src={login2} alt='' className='login2'/>
+    <img src={cube3} alt='' className='login3'/>
+    <img src={cube1} alt='' className='login4'/>
         <div className='container mx-auto'>
+        <img src={login1} alt='' className='login1'/>
             <div className='grid grid-cols-12 flex justify-center items-center'>
+
                 <div className='col-span-4'>
                     <h2>welcome to</h2>
                     <h3>SkillCompute</h3>
                     <div className='login-area'>
-                    <div className='contact-btn flex items-center justify-between bg-blue '>
-                      <div className="inner-text-btn ">Student</div>
-                      <div className="arrow-icon-area">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                    <div className='contact-btn parent flex items-center justify-between'>
-                      <div className="inner-text-btn ">Parent</div>
-                      <div className="arrow-icon-area">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                    <div className='contact-btn parent flex items-center justify-between'>
-                      <div className="inner-text-btn ">Institution</div>
-                      <div className="arrow-icon-area">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                 </div>
+        <div
+          className='contact-btn flex items-center justify-between bg-blue'
+          onClick={() => setActiveComponent('student')}
+        >
+          <div className='inner-text-btn'>Student</div>
+          <div className='arrow-icon-area'>
+            <i className='fa-solid fa-arrow-right'></i>
+          </div>
+        </div>
+        <div
+          className='contact-btn parent flex items-center justify-between'
+          onClick={() => setActiveComponent('parent')}
+        >
+          <div className='inner-text-btn'>Parent</div>
+          <div className='arrow-icon-area'>
+            <i className='fa-solid fa-arrow-right'></i>
+          </div>
+        </div>
+        <div
+          className='contact-btn parent flex items-center justify-between'
+          onClick={() => setActiveComponent('institution')}
+        >
+          <div className='inner-text-btn'>Institution</div>
+          <div className='arrow-icon-area'>
+            <i className='fa-solid fa-arrow-right'></i>
+          </div>
+        </div>
+      </div>
                 </div>
-                <div className='col-span-5'>
-                    <form className='login-form'>
-                        <h4>Login</h4>
-                       <div className='login-input-area mt-5  flex items-center bg-white'>
-                       <div className='icon-contact-area'>
-                      <i class="fa-regular fa-user"></i>
-                      </div>
-                            <div className='input-area'>
-                            <input placeholder='Email'/>
-                            </div>
-                       </div>
-                       <div className='login-input-area mt-4  flex items-center bg-white'>
-                       <div className='icon-contact-area'>
-                      <i class="fa-regular fa-user"></i>
-                      </div>
-                            <div className='input-area'>
-                            <input placeholder='Password' />
-                            </div>
-                       </div>
-                      <button className='login-form-btn'>Login <img src={login} alt=''/></button>
-                      <div className='mt-12 flex justify-between'>
-                     <Link> <button className='forget-form-btn'>Forget Password?</button></Link>
-                      <button className='forget-form-btn dont-have '>Don't have account? <Link className='signup'>  Sign up </Link></button>
-                      </div>
-                    </form>
+                <div className='col-span-6'>
+                {renderComponent()}
                 </div>
             </div>
         </div>

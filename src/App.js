@@ -11,9 +11,12 @@ import Contact from './contact';
 import Login from './login';
 
 
+
 function App() {
+ 
   return (
     <>
+    <div className=''>
       <Header/>
        <Routes>
           <Route path="/" element={<Home />} />
@@ -21,10 +24,10 @@ function App() {
           <Route path="/syllabus" element={<Syllabus />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-
+          <Route path="/login" element={<Login />} /> 
         </Routes>
       <Footer/>
+      </div>
       </>
   );
 }
