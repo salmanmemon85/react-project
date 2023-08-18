@@ -8,10 +8,12 @@ import cube16 from "../../images/cube16.png";
 import cube17 from "../../images/cube17.png";
 import cube18 from "../../images/cube18.png";
 
+
 function SectionSkil() {
   return (
     <>
       <section className="relative section-2">
+      
         <img src={cube12} alt="" className="cube12" />
         <img src={cube13} alt="" className="cube13" />
         <img src={cube14} alt="" className="cube14" />

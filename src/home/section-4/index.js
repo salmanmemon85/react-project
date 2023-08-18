@@ -3,6 +3,7 @@ import img3 from "../../images/img3.png";
 import cube16 from "../../images/cube16.png";
 import cube3 from "../../images/cube3.png";
 import cube7 from "../../images/cube7.png";
+import cube1 from "../../images/cube1.png";
 
 function SectionPower() {
   return (
@@ -11,7 +12,7 @@ function SectionPower() {
         <img src={cube16} alt="" className="cube19" />
         <img src={cube3} alt="" className="cube20" />
         <img src={cube7} alt="" className="cube21" />
-
+        <img src={cube1} alt="" className="cube1" />
         <div className="container mx-auto">
           <div className="grid grid-cols-12 flex justify-end items-center ">
             <div className="col-span-6 sec-2-img">

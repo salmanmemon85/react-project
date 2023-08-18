@@ -7,7 +7,9 @@ export default function Footer() {
         <div className="container mx-auto">
           <div className="grid grid-cols-10 flex justify-center items-center ">
             <div className="col-span-10 mx-auto">
-              <img src={footerLogo} />
+              <div className="footer-logo-area">
+              <img src={footerLogo} alt=""/>
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-12 flex justify-between">
@@ -91,7 +93,7 @@ export default function Footer() {
         </div>
       </footer>
       <div className="copyright-sec">
-        <p>Copyright 2023. SKILLCOMPUTE. All Right Reserved</p>
+        <p>Copyright 2023. <strong>SKILLCOMPUTE.</strong>  All Right Reserved</p>
       </div>
     </>
   );

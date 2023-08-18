@@ -5,11 +5,13 @@ import cube9 from "../../images/cube9.png";
 import cube10 from "../../images/cube10.png";
 import cube11 from "../../images/cube11.png";
 import subtraction from "../../images/subtraction.png";
-
+import cube20 from "../../images/cube20.png";
 function SectionSkil() {
   return (
     <>
       <section className="skil-sec">
+        <div className="cube-cover"></div>
+      <img src={cube20} alt="" className="cube25" />
         <img src={subtraction} className="subtraction" />
         <img src={cube8} className="cube8" />
         <img src={cube9} className="cube9" />

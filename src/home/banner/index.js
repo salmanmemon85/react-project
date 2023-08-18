@@ -29,7 +29,7 @@ function Banner() {
         <div className="container mx-auto">
           <div className="grid grid-col-12 justify-center items-center banner-row">
             <div className="col-span-12 ">
-              <div className="text-center relative z-[999] ">
+              <div className="text-center relative z-[999] banner-section-content-area">
                 <h1 className="primary-hd space-bottom">
                   Unleash the <span className="yello-text">Potential</span>{" "}
                   Within!
@@ -47,10 +47,13 @@ function Banner() {
                 <h4 className="primary-hd small-size space-bottom banner-hd-classes">
                   classes for Grades 6th to 10th
                 </h4>
+                <h4 className="primary-hd small-size ">
+                 Login
+                </h4>
                 <div className="main-banner-login-area">
                   <div className="login-banner-btn flex justify-between items-center">
                     <div>
-                      <span>Login as a Student</span>
+                      <span> As a Student</span>
                     </div>
                     <div className="arrow-icon-area">
                       <i className="fa-solid fa-arrow-right"></i>
@@ -58,14 +61,14 @@ function Banner() {
                   </div>
                   <div className="banner-btn-area flex justify-between">
                     <div className="inner-btn-area">
-                      <div className="inner-text-btn">Login as a Parent</div>
+                      <div className="inner-text-btn"> As a Parent</div>
                       <div className="arrow-icon-area">
                         <i className="fa-solid fa-arrow-right"></i>
                       </div>
                     </div>
                     <div className="inner-btn-area">
                       <div className="inner-text-btn">
-                        Login as an Institution
+                         As an Institution
                       </div>
                       <div className="arrow-icon-area">
                         <i className="fa-solid fa-arrow-right"></i>
