@@ -35,7 +35,7 @@ body{
   @apply justify-end
 }
 .item{
- @apply font-["Regular"] 
+ @apply font-["Regular"]
 }
 
 .item.syllabus-item:hover{
@@ -220,7 +220,7 @@ img.sec-img{
   @apply  pt-[24rem] pb-[23rem]    z-[9] left-0 relative  top-[-87px]
 }
 .hd-secondary{
-  @apply font-["ExtraBold"] 
+  @apply font-["ExtraBold"]
 }
 .hd-secondary{
   @apply text-7xl font-semibold text-white
@@ -355,7 +355,7 @@ img.sec-img{
     background-image: url(./images/bg3.png);
 }
 .contact::before {
-  @apply content-['']  absolute top-[-0] left-[-165px] h-[1540px] w-[540px]  bg-[#1CC6F3] 
+  @apply content-['']  absolute top-[-0] left-[-165px] h-[1540px] w-[540px]  bg-[#1CC6F3]
  }
  .contact img{
   @apply absolute w-[620px] left-[19%] top-[-5px] h-[100%] bg-no-repeat bg-cover
@@ -673,7 +673,7 @@ img.cube16 {
   background-image: url(./images/contactbg2.png);
 }
 .contact-sec{
-  @apply bg-no-repeat relative bg-cover bg-center pb-[100px] pt-[200px] z-[999] mt-[-26rem] h-[800px] 
+  @apply bg-no-repeat relative bg-cover bg-center pb-[100px] pt-[200px] z-[999] mt-[-26rem] h-[800px]
 }
 .contact-sec-area .contact{
   @apply pt-[350px]
@@ -733,10 +733,10 @@ img.cube16 {
   @apply pl-[160px]
 }
 .login-form h4{
-  @apply text-[50px] font-["ExtraBold"] text-[#175081] 
+  @apply text-[50px] font-["ExtraBold"] text-[#175081]
 }
 .login-input-area{
-  @apply w-[100%] mx-auto 
+  @apply w-[100%] mx-auto
 }
 .login-input-area {
   box-shadow: 1px 7px 10px #00000029;
@@ -745,7 +745,7 @@ img.cube16 {
   @apply mt-16 flex items-center text-[20px] uppercase font-["bold"]
 }
 .login-form-btn img{
-  @apply ml-3 
+  @apply ml-3
 }
 .login-input-area .input-area{
   @apply w-[80%] m-0
@@ -920,7 +920,7 @@ img.cube16 {
     right-[-121px] top-[0]
 }
 .book-img::after{
-  @apply translate-y-[-46%] 
+  @apply translate-y-[-46%]
 }
 .sec-content-area .inner-btn-area.skil-btn, .power-content-area .inner-btn-area.skil-btn{
   @apply px-[60px]
@@ -1055,8 +1055,8 @@ img.cube21{
 }
 
 }
-@media(max-width: 1440px){ 
- 
+@media(max-width: 1440px){
+
   img.cube25 {
     @apply right-[38%] top-[7%] w-[21%]
 }
@@ -1200,7 +1200,7 @@ img.cube15{
     @apply left-[39%]
   }
   .img1-area{
-    @apply overflow-hidden top-[-149px] 
+    @apply overflow-hidden top-[-149px]
   }
   .img1-area::after{
     @apply  left-[33%] translate-y-[-47%]
@@ -1216,7 +1216,34 @@ img.cube15{
     @apply h-[88vh]
   }
   .main-clip{
-   @apply right-[-14%] top-[-26px] w-[103%]
+   @apply right-[-12%] top-[-11px] w-[103%]
+  }
+  .banner-section-content-area h1.primary-hd {
+    @apply text-[49px] mb-[1rem]
+}
+img.cube2{
+  @apply left-[21%] bottom-[44%]
+}
+.login-banner-btn span{
+  @apply text-[1.2rem]
+}
+.contact img{
+  @apply w-[450px]
+}
+.cube-cover {
+    @apply right-[38%]
+}
+img.cube25 {
+  @apply right-[37%] top-[15%]
+}
+.img1-area{
+  @apply scale-[1.3] right-[-91px]   top-[-138px]
+}
+  /* .main-banner-login-area{
+    @apply px-[141px]
+  } */
+  h5.primary-hd.small-size{
+    @apply text-[2rem] mt-[10px]
   }
   .section-2::after {
     @apply top-[-54%]
@@ -1304,7 +1331,7 @@ img.cube9{
     @apply scale-[1.3]  top-[-139px] right-[-89px]
   }
   .main-clip {
-    @apply right-[-11%] top-[69px] 
+    @apply right-[-11%] top-[69px]
 }
 
   .contact-hd-area h3{
@@ -1344,7 +1371,7 @@ img.cube9{
     @apply text-[35px]
   }
   .login-sec h2 {
-    
+
    @apply text-[47px]
 }
   .syllabus-sec::after {
@@ -1590,7 +1617,7 @@ img.cube9{
 }
 @media(max-width: 767px){
   .login-form .flex.justify-between{
-    @apply block  
+    @apply block
   }
   .login-area .contact-btn{
     @apply w-[100%]

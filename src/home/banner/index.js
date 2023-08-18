@@ -47,9 +47,9 @@ function Banner() {
                 <h4 className="primary-hd small-size space-bottom banner-hd-classes">
                   classes for Grades 6th to 10th
                 </h4>
-                <h4 className="primary-hd small-size ">
+                <h5 className="primary-hd small-size ">
                  Login
-                </h4>
+                </h5>
                 <div className="main-banner-login-area">
                   <div className="login-banner-btn flex justify-between items-center">
                     <div>
