@@ -318,7 +318,7 @@ function SectionSkil() {
                 </p>
               </div>
             </div>
-            <div className="col-span-6 sec-2-img">
+            <div className="col-span-6">
               <div className="book-img">
                 <img src={img2} />
               </div>

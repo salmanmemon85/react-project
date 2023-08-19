@@ -7,7 +7,6 @@ import cube4 from "../../images/cube4.png";
 import cube5 from "../../images/cube5.png";
 import cube6 from "../../images/cube6.png";
 import cube7 from "../../images/cube7.png";
-
 import { useState } from "react";
 
 function Banner() {
@@ -15,9 +14,15 @@ function Banner() {
   const openDropDown = () => {
     setActive(!active);
   };
+
+
+ 
+
+
   return (
     <>
       <section className="banner">
+     
         <img src={cube1} alt="" className="cube1" />
         <img src={cube2} alt="" className="cube2" />
         <img src={cube3} alt="" className="cube3" />
