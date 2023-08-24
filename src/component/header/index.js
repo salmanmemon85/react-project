@@ -26,7 +26,7 @@ function Header() {
           <div className="grid grid-cols-12 flex items-center justify-between">
             <div className="col-span-3 span-md-4 span-sm-6">
               <a href="./">
-                <img src={logo} className="" alt="logo" />
+                <img src={logo} className="logo" alt="logo" />
               </a>
               <button className="open-menu" onClick={openMenu}>
                 <i class="fa-solid fa-bars"></i>

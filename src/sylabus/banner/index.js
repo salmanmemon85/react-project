@@ -75,8 +75,10 @@ export default function SyllabusBanner() {
           <div className="grid grid-cols-10 flex items-center justify-center mb-5">
             <div className="col-span-5">
               <div className="text-center syllbus-content-area">
+              <div className="syllabus-img">
                 <img src={syllbus2} alt="" />
-                <div className="  syllbus-hd-area physic">
+                </div>
+                <div className="syllbus-hd-area physic">
                   <h3 className="primary-hd light-hd">
                     <span className="yello-text">PHYSICS</span>{" "}
                   </h3>
@@ -90,8 +92,10 @@ export default function SyllabusBanner() {
             </div>
             <div className="col-span-5">
               <div className="text-center syllbus-content-area">
+              <div className="syllabus-img">
                 <img src={syllbus4} alt="" />
-                <div className="mt-5 syllbus-hd-area">
+                </div>
+                <div className=" syllbus-hd-area">
                   <h3 className="primary-hd light-hd">
                     <span className="yello-text">MATHS</span>{" "}
                   </h3>
@@ -107,8 +111,10 @@ export default function SyllabusBanner() {
           <div className="grid grid-cols-10 flex items-center justify-center">
             <div className="col-span-5">
               <div className="text-center syllbus-content-area">
+              <div className="syllabus-img">
                 <img src={syllbus3} alt="" />
-                <div className="mt-5  syllbus-hd-area">
+                </div>
+                <div className="  syllbus-hd-area">
                   <h3 className="primary-hd light-hd">
                     <span className="yello-text">BIOLOGY</span>{" "}
                   </h3>
@@ -122,8 +128,10 @@ export default function SyllabusBanner() {
             </div>
             <div className="col-span-5">
               <div className="text-center syllbus-content-area">
+                <div className="syllabus-img">
                 <img src={syllbus1} alt="" />
-                <div className="mt-5 syllbus-hd-area">
+                </div>
+                <div className=" syllbus-hd-area">
                   <h3 className="primary-hd light-hd">
                     <span className="yello-text">CHEMISTRY</span>{" "}
                   </h3>

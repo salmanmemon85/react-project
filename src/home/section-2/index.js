@@ -7,6 +7,7 @@ import cube15 from "../../images/cube15.png";
 import cube16 from "../../images/cube16.png";
 import cube17 from "../../images/cube17.png";
 import cube18 from "../../images/cube18.png";
+import { Link } from "react-router-dom";
 
 
 function SectionSkil() {
@@ -272,12 +273,14 @@ function SectionSkil() {
                   The leading e-learning platform designed to help you <br />{" "}
                   unleash your full potential.
                 </p>
+                <Link to="/enroll">
                 <div className="inner-btn-area skil-btn enrol-btn">
                   <div className="inner-text-btn ">Enroll Now</div>
                   <div className="arrow-icon-area">
                     <i className="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
+                </Link>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function AboutBanner() {
         <img src={cube5} alt="" className="cube5" />
         <img src={cube4} alt="" className="cube4" />
         <img src={cube3} alt="" className="cube3" />
-
+    <div className="about">
         <Banner
           img={about1}
           heading="About"
@@ -28,11 +28,12 @@ export default function AboutBanner() {
           span2="Every Child"
           heading2="Special Attention For"
         />
+        </div>
       </div>
       <section className="about-sec-1">
         <img src={cube6} alt="" className="cube6" />
 
-        <div className="container mx-auto">
+        <div className="container-fluid mx-auto">
           <div className="grid grid-cols-12 flex justify-between items-center">
             <div className="col-span-6">
               <img src={about2} alt="" />
@@ -60,15 +61,14 @@ export default function AboutBanner() {
           </div>
         </div>
       </section>
-      <section className="about-img-sec">
+      {/* <section className="about-img-sec">
         <img src={about3} alt="" />
-      </section>
+      </section> */}
       <section className="about-sec relative">
         <img src={cube12} alt="" className="cube12" />
         <img src={cube5} alt="" className="cube5" />
         <img src={cube3} alt="" className="cube3" />
         <img src={cube16} alt="" className="cube16" />
-
         <div className="container mx-auto">
           <div className="grid grid-cols-10 flex justify-center">
             <div className="col-span-10">

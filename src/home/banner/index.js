@@ -8,6 +8,7 @@ import cube5 from "../../images/cube5.png";
 import cube6 from "../../images/cube6.png";
 import cube7 from "../../images/cube7.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Banner() {
   const [active, setActive] = useState(false);
@@ -52,34 +53,15 @@ function Banner() {
                 <h4 className="primary-hd small-size space-bottom banner-hd-classes">
                   classes for Grades 6th to 10th
                 </h4>
-                <h5 className="primary-hd small-size ">
-                 Login
-                </h5>
                 <div className="main-banner-login-area">
-                  <div className="login-banner-btn flex justify-between items-center">
-                    <div>
-                      <span> As a Student</span>
-                    </div>
-                    <div className="arrow-icon-area">
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </div>
+                  <Link to="/enroll">
+                <div className="inner-btn-area skil-btn enrol-btn">
+                  <div className="inner-text-btn ">Enroll Now</div>
+                  <div className="arrow-icon-area">
+                    <i className="fa-solid fa-arrow-right"></i>
                   </div>
-                  <div className="banner-btn-area flex justify-between">
-                    <div className="inner-btn-area">
-                      <div className="inner-text-btn"> As a Parent</div>
-                      <div className="arrow-icon-area">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                    <div className="inner-btn-area">
-                      <div className="inner-text-btn">
-                         As an Institution
-                      </div>
-                      <div className="arrow-icon-area">
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+                </Link>
                 </div>
               </div>
             </div>

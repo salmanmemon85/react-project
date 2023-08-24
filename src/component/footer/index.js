@@ -49,7 +49,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-span-3">
+            <div className="col-span-4">
               <div className="footer-address-area">
                 <div>
                   <i class="fa-solid fa-location-dot"></i>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <div>
                   <p>
                     <strong>HEAD OFFICE - VISAKHAPATNAM</strong>D No :27-R,
-                    B-196, Tarakarama layout, Rushikonda, IT Surge,
+                    B-196, Tarakarama layout, Rushikonda, ITZ Surge,
                     Visakhapatnam, Andhra Pradesh 530045, India.{" "}
                   </p>
                 </div>
@@ -75,7 +75,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-span-2"></div>
+            <div className="col-span-1"></div>
             <div className="col-span-3">
               <div className="footer-phone-area">
                 <p>Get Directions</p>
@@ -93,7 +93,17 @@ export default function Footer() {
         </div>
       </footer>
       <div className="copyright-sec">
-        <p>Copyright 2023. <strong>SKILLCOMPUTE.</strong>  All Right Reserved</p>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 flex">
+            <div className="col-span-6 text-start">
+            <p>Copyright 2023. <strong>SKILLCOMPUTE.</strong>  All Right Reserved</p>
+            </div>
+            <div className="col-span-6 text-end">
+            <p>Power By <strong>Vectority Solutions</strong></p>
+            </div>
+          </div>
+        </div>
+       
       </div>
     </>
   );
