@@ -15,12 +15,14 @@ export default function Login() {
   const renderComponent = () => {
     if (activeComponent === "student") {
       return <Student />;
-    } else if (activeComponent === "parent") {
-      return <Parents />;
-    } else if (activeComponent === "institution") {
+    }
+   else if (activeComponent === "institution") {
       return <Institution />;
     }
     return <Student />;
+  };
+  const handleButtonClick = (component) => {
+    setActiveComponent(component);
   };
   return (
     <>
@@ -30,39 +32,30 @@ export default function Login() {
         <img src={cube1} alt="" className="login4" />
         <div className="container mx-auto">
           <img src={login1} alt="" className="login1" />
-          <div className="grid grid-cols-12 flex justify-center items-center">
+          <div className="grid grid-cols-12 flex justify-center">
             <div className="col-span-4">
               <h2>welcome to</h2>
               <h3>SkillCompute</h3>
               <div className="login-area">
-                <div
-                  className="contact-btn flex items-center justify-between bg-blue"
-                  onClick={() => setActiveComponent("student")}
-                >
-                  <div className="inner-text-btn">Student</div>
-                  <div className="arrow-icon-area">
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </div>
-                </div>
-                <div
-                  className="contact-btn parent flex items-center justify-between"
-                  onClick={() => setActiveComponent("parent")}
-                >
-                  <div className="inner-text-btn">Parent</div>
-                  <div className="arrow-icon-area">
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </div>
-                </div>
-                <div
-                  className="contact-btn parent flex items-center justify-between"
-                  onClick={() => setActiveComponent("institution")}
-                >
-                  <div className="inner-text-btn">Institution</div>
-                  <div className="arrow-icon-area">
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </div>
-                </div>
-              </div>
+        <div
+          className={`contact-btn flex items-center justify-between ${activeComponent === "student" ? "active" : ""}`}
+          onClick={() => handleButtonClick("student")}
+        >
+          <div className="inner-text-btn">Student</div>
+          <div className="arrow-icon-area">
+            <i className="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          className={`contact-btn parent flex items-center justify-between ${activeComponent === "institution" ? "active" : ""}`}
+          onClick={() => handleButtonClick("institution")}
+        >
+          <div className="inner-text-btn">Institution</div>
+          <div className="arrow-icon-area">
+            <i className="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
             </div>
             <div className="col-span-6">{renderComponent()}</div>
           </div>

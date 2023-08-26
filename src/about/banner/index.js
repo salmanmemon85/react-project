@@ -61,9 +61,9 @@ export default function AboutBanner() {
           </div>
         </div>
       </section>
-      {/* <section className="about-img-sec">
+      <section className="about-img-sec">
         <img src={about3} alt="" />
-      </section> */}
+      </section>
       <section className="about-sec relative">
         <img src={cube12} alt="" className="cube12" />
         <img src={cube5} alt="" className="cube5" />

@@ -75,7 +75,7 @@ export default function SyllabusBanner() {
           <div className="grid grid-cols-10 flex items-center justify-center mb-5">
             <div className="col-span-5">
               <div className="text-center syllbus-content-area">
-              <div className="syllabus-img">
+              <div className="syllabus-img syllabus-1">
                 <img src={syllbus2} alt="" />
                 </div>
                 <div className="syllbus-hd-area physic">
@@ -111,7 +111,7 @@ export default function SyllabusBanner() {
           <div className="grid grid-cols-10 flex items-center justify-center">
             <div className="col-span-5">
               <div className="text-center syllbus-content-area">
-              <div className="syllabus-img">
+              <div className="syllabus-img syllabus-3">
                 <img src={syllbus3} alt="" />
                 </div>
                 <div className="  syllbus-hd-area">

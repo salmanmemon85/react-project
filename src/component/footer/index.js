@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="grid grid-cols-10 flex justify-center items-center ">
             <div className="col-span-10 mx-auto">
               <div className="footer-logo-area">
-              <img src={footerLogo} alt=""/>
+                <img src={footerLogo} alt="" />
               </div>
             </div>
           </div>
@@ -57,8 +57,8 @@ export default function Footer() {
                 <div>
                   <p>
                     <strong>HEAD OFFICE - VISAKHAPATNAM</strong>D No :27-R,
-                    B-196, Tarakarama layout, Rushikonda, ITZ Surge,
-                    Visakhapatnam, Andhra Pradesh 530045, India.{" "}
+                    B-196, Tarakarama layout, Rushikonda, ITZ , Visakhapatnam,
+                    Andhra Pradesh 530045, India.{" "}
                   </p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Footer() {
               <div className="footer-phone-area">
                 <p>Get Directions</p>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13026967.38926922!2d-106.25428513633595!3d37.142902825634486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2s!4v1691191688164!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d121559.06165070858!2d83.379979!3d17.80482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395bd1e81ecb3f%3A0xc69c28d799cb3b68!2sVectority%20Solutions!5e0!3m2!1sen!2sin!4v1692982745826!5m2!1sen!2sin"
                   width="390"
                   height="200"
                   allowfullscreen=""
@@ -96,14 +96,18 @@ export default function Footer() {
         <div className="container mx-auto">
           <div className="grid grid-cols-12 flex">
             <div className="col-span-6 text-start">
-            <p>Copyright 2023. <strong>SKILLCOMPUTE.</strong>  All Right Reserved</p>
+              <p>
+                Copyright 2023. <strong>SKILLCOMPUTE.</strong> All Right
+                Reserved
+              </p>
             </div>
             <div className="col-span-6 text-end">
-            <p>Power By <strong>Vectority Solutions</strong></p>
+              <p>
+                Power By <strong>Vectority Solutions</strong>
+              </p>
             </div>
           </div>
         </div>
-       
       </div>
     </>
   );

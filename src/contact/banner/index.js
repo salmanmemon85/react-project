@@ -42,12 +42,6 @@ export default function ContactBanner() {
                     <i className="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
-                <div className="contact-btn parent flex items-center justify-between">
-                  <div className="inner-text-btn ">Parent</div>
-                  <div className="arrow-icon-area">
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </div>
-                </div>
               </div>
               <div className="contact-btn instituion flex items-center justify-between">
                 <div className="inner-text-btn ">Institution</div>

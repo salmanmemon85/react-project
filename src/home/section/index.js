@@ -60,7 +60,7 @@ function SectionSkil() {
               </div>
             </div>
             <div className="col-span-5 img1-area">
-              <div className="">
+              <div className="child-img">
                 <img className="img1" src={img1} alt="" />
               </div>
             </div>

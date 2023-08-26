@@ -160,15 +160,6 @@ function Header() {
                           className="dropdown-item"
                           onClick={closeMenu}
                         >
-                          Parent or Guardian
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="./login"
-                          className="dropdown-item"
-                          onClick={closeMenu}
-                        >
                           Institution
                         </Link>
                       </li>
