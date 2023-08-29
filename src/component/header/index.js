@@ -38,8 +38,6 @@ function Header() {
                   <i class="fa-solid fa-xmark"></i>
                 </button>
                 <ul className="list flex items-center">
-                  {/* <li className="item" onClick={closeMenu}><a href="#">Home</a></li>
-                    <li className="item" onClick={closeMenu}><a href="#">About us</a></li> */}
                   <li className="item">
                     <a href="#">
                       {" "}
@@ -56,6 +54,7 @@ function Header() {
                       </Link>
                     </a>
                   </li>
+                  <Link to="./syllabus" className="item" onClick={closeMenu}>
                   <li
                     className="item syllabus-item"
                     onClick={openDropDownSyllabus}
@@ -64,13 +63,7 @@ function Header() {
                     <button className="ml-2" type="button">
                       <i class="fa-solid fa-angle-down"></i>
                     </button>
-                    <ul
-                      className={
-                        activeSyllabus
-                          ? "drop-down-menu active"
-                          : "drop-down-menu"
-                      }
-                    >
+                    <ul className="drop-down-menu">
                       <li>
                         {" "}
                         <Link
@@ -113,6 +106,7 @@ function Header() {
                       </li>
                     </ul>
                   </li>
+                  </Link>
                   <li className="item">
                     {" "}
                     <Link

@@ -9,9 +9,11 @@ import Syllabus from './sylabus';
 import Testimonial from './testimonial';
 import Contact from './contact';
 import Login from './login';
-
+import MathData from './innersyllabus/math';
+import data from "./data/mathsData";
+import chemistry from "./data/chemistryData";
 import Enroll from './enroll';
-
+import ChemistryData from './innersyllabus/chemistry';
 
 function App() {
  
@@ -27,6 +29,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} /> 
           <Route path="/enroll" element={<Enroll />} /> 
+          <Route path="/math" element={<MathData data={data}/>} /> 
+          <Route path="/chemistry" element={<ChemistryData chemisData={chemistry}/>} /> 
+
         </Routes>
       <Footer/>
       </div>

@@ -148,9 +148,9 @@ body{
   @apply mx-2
 }
 .drop-down-menu{
-  @apply absolute hidden w-56 bg-white  shadow-lg top-24  rounded-[11px] shadow-[#70707040] py-4 pr-10 pl-[3.5rem] transition ease-in-out delay-150
+  @apply absolute hidden w-56 bg-white  shadow-lg top-[90px]  rounded-[11px] shadow-[#70707040] py-4 pr-10 pl-[3.5rem] transition ease-in-out delay-150
 }
-.drop-down-menu.active{
+.item.syllabus-item:hover .drop-down-menu{
   @apply block transition ease-in-out delay-150
 }
 .drop-down-menu li{
@@ -164,7 +164,7 @@ body{
  .clip-path-4 h3,
  .clip-path-3 h3,
  .clip-path-1 h3 {
-  @apply absolute top-[50%] left-[50%] text-[50px] font-semibold text-white z-[9999] rotate-[-16deg] translate-y-[-50%] translate-x-[-50%]
+  @apply font-["semibold"] absolute top-[50%] left-[50%] text-[50px]  text-white z-[9999] rotate-[-16deg] translate-y-[-50%] translate-x-[-50%]
 }
 .clip-path-3 h3{
   @apply rotate-[16deg]
@@ -173,7 +173,7 @@ body{
   @apply rotate-[-11deg] left-[54%]
 }
 .clip-path-1 h3{
-  @apply rotate-[-12deg] left-[55%] text-[#174F81]
+  @apply rotate-[26deg] left-[55%] text-[#174F81]
 }
 /* partical */
 img.cube1 {
@@ -398,7 +398,7 @@ img.sec-img{
   @apply mt-[-1rem]
 }
 .potential-sec::after {
-  @apply content-['']  absolute top-[-46px] left-[-121px] h-[348px] w-[110%]
+  @apply content-['']  absolute top-[-46px] left-[-121px] h-[348px] w-[110%] bg-center
  }
 .potential-sec::after {
   background-image: url(./images/bg2.png);
@@ -407,7 +407,7 @@ img.sec-img{
   @apply text-black
 }
 .book-img{
-  @apply absolute bottom-[0] right-[0] z-[9999]
+  @apply absolute  bottom-[0] right-[0] z-[9999]
 }
 .power-section{
   @apply pt-[100px] pb-[100px]
@@ -447,7 +447,7 @@ img.sec-img{
   @apply text-2xl text-white font-normal mb-5
 }
 .contact::after {
-  @apply content-['']  absolute top-[-97px] left-[-10px] h-[348px] w-[101%]  bg-no-repeat bg-cover
+  @apply content-['']  absolute top-[-97px] left-[-10px] h-[348px] w-[101%]  bg-no-repeat bg-cover bg-center
  }
 .contact:after {
     background-image: url(./images/bg3.png);
@@ -462,7 +462,7 @@ img.sec-img{
   @apply bg-[#EDA825] pb-[100px] relative
 }
 .footer::after{
-  @apply content-[''] absolute left-[-1px] top-[-265px] bg-no-repeat bg-cover h-[308px] w-[100%] z-[9999]
+  @apply content-[''] absolute left-[-1px] top-[-265px] bg-no-repeat bg-cover h-[340px] bg-center w-[100%] z-[9999]
 }
 .footer::after {
   background-image: url(./images/bg4.png);
@@ -512,10 +512,34 @@ img.sec-img{
 .accordion-content{
   @apply h-[0] bg-white overflow-hidden transition ease-in-out rounded-lg
 }
+.accordion-chapter-content{
+  @apply h-[0] bg-white overflow-hidden transition ease-in-out rounded-lg
+}
+.accordion-chapter-content.active{
+  @apply bg-white  h-[200px] overflow-y-auto p-4
+}
 .accordion-content p{
   @apply text-lg font-normal text-black m-0
 }
-.accordion {
+.accordion-chapter{
+  @apply bg-white mb-[20px] shadow-lg shadow-[#0000001f] w-[97%] mx-auto
+}
+.accordion-chapter .inner-btn-area {
+  @apply w-[100%] py-[10px] 
+}
+.accordion-chapter .inner-btn-area .inner-text-btn {
+@apply text-[18px]
+}
+.accordion-chapter .inner-btn-area strong{
+  @apply text-[20px]
+}
+.accordion-chapter-content ul li{
+  @apply mb-[10px]
+}
+.chapter-sec h2.primary-hd{
+  @apply text-[30px] mt-[50px]
+}
+ .accordion {
   @apply bg-white rounded-lg w-[80%] mb-[25px]
 }
 .accordion-content.active{
@@ -586,13 +610,13 @@ img.sec-img{
   @apply w-[100%]  p-[10px] outline-none
 }
 .about-banner-area{
-  @apply bg-[#17BBF1] right-[10.5%] h-[700px] w-[644px] absolute top-0 z-[99] rounded-bl-[50%] rounded-br-[50%] overflow-hidden
+  @apply bg-[#17BBF1] right-[10.5%] h-[680px] w-[644px] absolute top-0 z-[99] rounded-bl-[50%] rounded-br-[50%] overflow-hidden
 }
 .about .banner .primary-hd{
   @apply mb-[37px]
 }
 .about-banner-area img{
-  @apply relative bottom-[16%]
+  @apply relative bottom-[18%]
 }
 .about-sec-1{
   @apply bg-no-repeat bg-cover pt-[230px] px-[150px] h-[1025px] bg-center
@@ -695,7 +719,7 @@ img.cube16 {
   background-image: url(./images/syllabusbgafter.png);
 }
 .syllabus-sec::after{
-  @apply content-[""] bg-cover bg-no-repeat absolute bottom-[-35px] left-[0] w-[100%]  h-[350px] z-[999]
+  @apply content-[""] bg-cover bg-no-repeat absolute bottom-[-35px] left-[0] w-[100%]  h-[350px] z-[999] bg-center
 }
 .syllabus-banner.contact-banner{
   background-image: url(./images/contactbg.png);
@@ -936,7 +960,9 @@ img.cube16 {
 .contact-btn.active .inner-text-btn{
   @apply text-white
 }
-
+.chapter-sec{
+  @apply  pb-[240px]
+}
 @media(max-width: 1600px){
   .about-sec{
     @apply pt-[90px] pb-[50px]
@@ -985,7 +1011,10 @@ img.cube16 {
     @apply justify-between
   }
   .contact::after{
-    @apply top-[-116px]
+    @apply top-[-90px]
+  }
+  img.cube19{
+    @apply top-[7%]
   }
   .container{
     max-width: 1200px;
@@ -1011,7 +1040,10 @@ img.cube16 {
     @apply px-[30px]
   }
   .potential-sec::after{
-    @apply top-[-88px]
+    @apply top-[-60px]
+  }
+  img.cube14{
+    @apply bottom-[7%]
   }
   .banner{
    @apply pt-[5rem]
@@ -1151,7 +1183,7 @@ img.cube21{
   @apply text-[3rem]
 }
 .about-banner-area{
-  @apply right-[13%] h-[545px] w-[500px]
+  @apply right-[13%] h-[536px] w-[500px]
 }
 .about-main-banner .banner {
  @apply pt-[147px]
@@ -1204,6 +1236,35 @@ img.cube21{
 }
 .skil-sec{
   @apply top-[40px]
+}
+}
+@media screen and (min-device-width: 1440px) and (max-device-width: 1550px){
+  .img1-area{
+    @apply top-[-196px] right-[-78px]
+  }
+  img.cube25{
+    @apply top-[8%]
+  }
+  .cube-cover{
+    @apply right-[38%]
+     top-[18%]
+     w-[115px]
+  }
+  .contact img{
+    @apply w-[490px]
+  }
+
+  .about-banner-area{
+    @apply h-[533px]
+  }
+  .about-main-banner img.cube1 {
+    @apply top-[100%]  
+}
+.syllabus-banner{
+  @apply pb-[350px] pt-[200px]
+}
+.syllabus-sec{
+  @apply mt-[-300px]
 }
 }
 @media(max-width: 1440px){
@@ -1379,7 +1440,7 @@ button, input, optgroup, select, textarea{
 }
 @media(max-width: 1366px){
   .about-banner-area {
-  @apply h-[470px] w-[432px]
+  @apply h-[461px] w-[432px]
 }
   .about-main-banner img.cube1{
     @apply top-[98%]
@@ -2112,7 +2173,7 @@ img.cube12{
   top: -33%;
 }
 .potential-sec::after {
-   @apply top-[-105px] left-[-10px]
+   @apply top-[-0] left-[-10px] h-[183px]
 }
 .potential-sec .para{
   @apply mt-[-1rem]
@@ -2121,10 +2182,10 @@ img.cube12{
   @apply hidden
 }
 .potential-sec {
-  @apply  pt-[291px]
+  @apply  pt-[170px]
 }
 .book-img{
-  @apply  bottom-[-7%] scale-[0.6] right-[-162px]
+  @apply   bottom-[-7%] scale-[0.6] right-[-162px]
 
 }
 .ai-power-img{
@@ -2173,6 +2234,9 @@ img.cube12{
 }
 }
 @media(max-width: 768px){
+  .child-img{
+    @apply hidden
+  }
   .section-img-content{
     @apply pt-0
   }
@@ -2279,26 +2343,26 @@ img.cube12{
     @apply   w-[71%]
 }
 
-  .book-img, .img1-area {
-    @apply hidden
-  }
   .img-sec{
     @apply h-[51vh]
   }
-  .section-2::after, .sec-2-img{
-    @apply hidden
+  .ai-power-img, .book-img{
+    @apply relative scale-[unset] right-[unset] top-[20px]
   }
   .skil-sec .grid, .potential-sec .grid, .power-section .grid, .footer .grid{
     @apply block
   }
-  .power-content-area, .section-{
-    @apply py-[0] px-[0]
+  .power-content-area{
+    @apply pt-[60px] px-[0]
   }
   .footer .grid .col-span-4{
     @apply py-[20px]
   }
   .contact-form .inner-btn-area.skil-btn, .inner-btn-area.skil-btn.enrol-btn.power{
     @apply w-[31%]
+  }
+  .section-2::after{
+    @apply top-[-22%]
   }
   .footer{
     @apply pb-[30px]
@@ -2308,7 +2372,7 @@ img.cube12{
     right: 22%;
 }
 .main-clip {
-  @apply left-[-10%] mt-[-43rem] w-[140%] scale-[0.4]
+  @apply left-[-3%] mt-[-46rem] w-[140%] scale-[0.4]
 }
 .primary-hd{
   @apply text-[2rem]
@@ -2388,13 +2452,13 @@ h4.primary-hd.banner-hd-classes{
     @apply pt-[0]
   }
   .power-content-area{
-    @apply pt-[420px]
+    @apply pt-[120px]
   }
   .light-hd, .hd-secondary.small-size {
     margin-bottom: 25px;
 }
 .potential-sec::after {
-  top: -185px;
+  top: 0;
 }
 .potential-sec {
   padding-top: 211px;
@@ -2503,6 +2567,8 @@ img.cube17,
 img.cube18,
 img.cube19,
 img.cube20,
+img.cube7,
+img.cube2,
 img.cube21{
   @apply hidden
 }
@@ -2681,9 +2747,6 @@ img.cube7 {
   .banner-section-content-area h1.primary-hd{
     @apply text-[26px]
   }
-  .power-content-area{
-    @apply pt-[340px]
-  }
   .power-content-area .primary-hd br{
     @apply hidden
   }
@@ -2699,5 +2762,8 @@ img.cube7 {
 }
 .section-img-content, .sec-content-area, .potential-sec, .power-section, .contact, .footer{
   @apply px-[10px]
+}
+.contact::after{
+  @apply top-[-90px]
 }
 }
