@@ -10,10 +10,16 @@ import Testimonial from './testimonial';
 import Contact from './contact';
 import Login from './login';
 import MathData from './innersyllabus/math';
-import data from "./data/mathsData";
+import math from "./data/mathsData";
 import chemistry from "./data/chemistryData";
+import physic from "./data/physics";
+import biology from "./data/biology";
 import Enroll from './enroll';
 import ChemistryData from './innersyllabus/chemistry';
+import PhysicData from './innersyllabus/physic';
+
+import BiologyData from './innersyllabus/biology';
+
 
 function App() {
  
@@ -29,9 +35,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} /> 
           <Route path="/enroll" element={<Enroll />} /> 
-          <Route path="/math" element={<MathData data={data}/>} /> 
-          <Route path="/chemistry" element={<ChemistryData chemisData={chemistry}/>} /> 
-
+          <Route path="/syllabus/math" element={<MathData data={math}/>} /> 
+          <Route path="/syllabus/chemistry" element={<ChemistryData chemisData={chemistry}/>} /> 
+          <Route path="/syllabus/physic" element={<PhysicData physicData={physic}/>} /> 
+          <Route path="/syllabus/biology" element={<BiologyData biology={biology}/>} /> 
         </Routes>
       <Footer/>
       </div>

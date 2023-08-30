@@ -13,6 +13,7 @@ import cube15 from "../../images/cube15.png";
 import cube16 from "../../images/cube16.png";
 import cube12 from "../../images/cube12.png";
 import cube3 from "../../images/cube3.png";
+import { Link } from "react-router-dom";
 
 export default function SyllabusBanner() {
   return (
@@ -74,6 +75,7 @@ export default function SyllabusBanner() {
         <div className="container mx-auto">
           <div className="grid grid-cols-10 flex items-center justify-center mb-5">
             <div className="col-span-5">
+            <Link to="./physic">
               <div className="text-center syllbus-content-area">
               <div className="syllabus-img syllabus-1">
                 <img src={syllbus2} alt="" />
@@ -89,8 +91,10 @@ export default function SyllabusBanner() {
                   </p>
                 </div>
               </div>
+              </Link>
             </div>
             <div className="col-span-5">
+            <Link to="./math">
               <div className="text-center syllbus-content-area">
               <div className="syllabus-img">
                 <img src={syllbus4} alt="" />
@@ -106,10 +110,12 @@ export default function SyllabusBanner() {
                   </p>
                 </div>
               </div>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-10 flex items-center justify-center">
             <div className="col-span-5">
+              <Link to="./biology">
               <div className="text-center syllbus-content-area">
               <div className="syllabus-img syllabus-3">
                 <img src={syllbus3} alt="" />
@@ -125,8 +131,10 @@ export default function SyllabusBanner() {
                   </p>
                 </div>
               </div>
+              </Link>
             </div>
             <div className="col-span-5">
+            <Link to="./chemistry">
               <div className="text-center syllbus-content-area">
                 <div className="syllabus-img">
                 <img src={syllbus1} alt="" />
@@ -142,6 +150,7 @@ export default function SyllabusBanner() {
                   </p>
                 </div>
               </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -9,51 +9,14 @@ export default function MathData({ data }) {
   };
   return (
     <>
-      <section className="syllabus-banner">
+     <section className="inner-banner">
         <div className="container mx-auto">
           <div className="grid grid-cols-12">
             <div className="col-span-12 text-center">
-              <h2>{data.mainhd}</h2>
+              <h2 className="primary-hd">{data.mainhd}</h2>
             </div>
           </div>
         </div>
-      </section>
-      <section className="relative syllabus">
-        <img src={cube6} alt="" className="cube6" />
-        <img src={cube1} alt="" className="cube1" />
-        <Design
-          title={
-            <>
-              Digital Learning <span className="yello-text"> Design </span> is
-              Our Thing
-            </>
-          }
-          subTitle={
-            <>
-              Empowering Young Minds with
-              <br />
-              <span className="yello-text">
-                Math, Physics, Biology <span className="and-text">&</span>{" "}
-                Physics
-              </span>
-            </>
-          }
-          innerTitle="classes for Grades 6th to 10th"
-          para={
-            <>
-              As part of our commitment to providing an exceptional learning
-              experience, we are thrilled to <br /> introduce our latest
-              offering: AI-Powered Mock Tests. With this innovative feature, you
-              can take <br /> your learning journey to new heights and achieve
-              your goals with confidence.
-              <br />
-              <br />
-              This advanced system is designed to closely replicate the format
-              and difficulty level of actual <br /> exams, enabling you to build
-              familiarity and boost your confidence.
-            </>
-          }
-        />
       </section>
       <section className="chapter-sec">
         <div className="container mx-auto">
@@ -63,7 +26,7 @@ export default function MathData({ data }) {
                 return (
                   <>
                     <h2 className="primary-hd">{item.gradehd}</h2>
-                    <div className="grid grid-cols-12 flex">
+                    <div className="grid grid-cols-12 flex chapter-row">
                       {item.subTopics.map((topic) => {
                         return (
                           <>
@@ -95,6 +58,9 @@ export default function MathData({ data }) {
                                     }
                                   >
                                     <ul>
+                                    <div className="inner-topic-area mb-2">
+                                        <h5><strong>Topic</strong> </h5>
+                                        </div>
                                       {topic.subTopicList.map(
                                         (itemList, index) =>
                                           itemList !== "" && (
