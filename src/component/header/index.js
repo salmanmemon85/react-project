@@ -19,6 +19,9 @@ function Header() {
   const openDropDownSyllabus = () => {
     setActiveSyllabus(!activeSyllabus);
   };
+  const openDropDownSyllabusClose = () => {
+    setActiveSyllabus(false);
+  };
   return (
     <>
       <section className="header">
@@ -54,22 +57,25 @@ function Header() {
                       </Link>
                     </a>
                   </li>
-                  <Link to="./syllabus" className="item" onClick={closeMenu}>
+                
                   <li
                     className="item syllabus-item"
-                    onClick={openDropDownSyllabus}
                   >
+                      <Link to="./syllabus" className="item" onClick={closeMenu}>
                     Syllabus
-                    <button className="ml-2" type="button">
-                      <i class="fa-solid fa-angle-down"></i>
+                    </Link>
+                    <button className="" type="button" >
+                      <i class="fa-solid fa-angle-down"  onClick={openDropDownSyllabus}></i>
                     </button>
-                    <ul className="drop-down-menu">
+                    <ul className={activeSyllabus ? "drop-down-menu active": "drop-down-menu"}>
                       <li>
                         {" "}
                         <Link
-                          to="./syllabus"
+                          to="./syllabus/math"
                           className="dropdown-item"
-                          onClick={closeMenu}
+                          onClick={() => (
+                            closeMenu(), openDropDownSyllabusClose()
+                          )}
                         >
                           Math
                         </Link>
@@ -77,9 +83,11 @@ function Header() {
                       <li>
                         {" "}
                         <Link
-                          to="./syllabus"
+                        to="./syllabus/biology"
                           className="dropdown-item"
-                          onClick={closeMenu}
+                          onClick={() => (
+                            closeMenu(), openDropDownSyllabusClose()
+                          )}
                         >
                           Biology
                         </Link>
@@ -87,9 +95,11 @@ function Header() {
                       <li>
                         {" "}
                         <Link
-                          to="./syllabus"
+                        to="./syllabus/physic"
                           className="dropdown-item"
-                          onClick={closeMenu}
+                          onClick={() => (
+                            closeMenu(), openDropDownSyllabusClose()
+                          )}
                         >
                           Physics
                         </Link>
@@ -97,16 +107,18 @@ function Header() {
                       <li>
                         {" "}
                         <Link
-                          to="./syllabus"
+                          to="./syllabus/chemistry"
                           className="dropdown-item"
-                          onClick={closeMenu}
+                          onClick={() => (
+                            closeMenu(), openDropDownSyllabusClose()
+                          )}
                         >
                           Chemistry
                         </Link>
                       </li>
                     </ul>
                   </li>
-                  </Link>
+                 
                   <li className="item">
                     {" "}
                     <Link

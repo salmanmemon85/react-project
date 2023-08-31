@@ -4,7 +4,6 @@ import syllbus1 from "../../images/syllabus1.png";
 import syllbus2 from "../../images/syllabus2.png";
 import syllbus3 from "../../images/syllabus3.png";
 import syllbus4 from "../../images/sylllabus3.png";
-import Design from "../../component/design";
 import cube6 from "../../images/contact1.png";
 import cube1 from "../../images/cube1.png";
 import cube10 from "../../images/cube10.png";
@@ -18,39 +17,32 @@ import { Link } from "react-router-dom";
 export default function SyllabusBanner() {
   return (
     <>
-      <section className="syllabus-banner">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-12">
-            <div className="col-span-12 text-center">
-              <h2>Syllabus</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="relative syllabus">
+      <section className="syllabus-bg relative">
         <img src={cube6} alt="" className="cube6" />
         <img src={cube1} alt="" className="cube1" />
-        <Design
-          title={
-            <>
-              Digital Learning <span className="yello-text"> Design </span> is
-              Our Thing
-            </>
-          }
-          subTitle={
-            <>
-              Empowering Young Minds with
+        <div className="container mx-auto">
+        <div className="grid grid-cols-12">
+            <div className="col-span-12 text-center">
+              <h2 className="primary-hd syllabus-hd">Syllabus</h2>
+            </div>
+          </div>
+          <div className="grid grid-cols-10 flex justify-center">
+            <div className="col-span-10">
+              <div className="text-center relative z-[999] ">
+                <h1 className="primary-hd space-bottom">  Digital Learning <span className="yello-text"> Design </span> is
+              Our Thing</h1>
+                <h2 className="primary-hd light-hd space-bottom">
+                Empowering Young Minds with
               <br />
               <span className="yello-text">
                 Math, Physics, Biology <span className="and-text">&</span>{" "}
                 Physics
               </span>
-            </>
-          }
-          innerTitle="classes for Grades 6th to 10th"
-          para={
-            <>
-              As part of our commitment to providing an exceptional learning
+                </h2>
+                <h4 className="primary-hd small-size space-bottom banner-hd-classes">
+                classes for Grades 6th to 10th
+                </h4>
+                <p className="para black">  As part of our commitment to providing an exceptional learning
               experience, we are thrilled to <br /> introduce our latest
               offering: AI-Powered Mock Tests. With this innovative feature, you
               can take <br /> your learning journey to new heights and achieve
@@ -59,10 +51,11 @@ export default function SyllabusBanner() {
               <br />
               This advanced system is designed to closely replicate the format
               and difficulty level of actual <br /> exams, enabling you to build
-              familiarity and boost your confidence.
-            </>
-          }
-        />
+              familiarity and boost your confidence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="syllabus-sec-2">
         <img src={cube12} alt="" className="cube12" />

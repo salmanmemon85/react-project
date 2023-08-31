@@ -19,7 +19,7 @@ function SectionSkil() {
         <img src={cube11} className="cube11" />
 
         <div className="container mx-auto">
-          <div className="grid grid-cols-10 flex justify-between items-center row-img">
+          <div className="grid grid-cols-10 flex justify-between  row-img">
             <div className="col-span-5">
               <div className="section-img-content">
                 <h2 className="hd-secondary small-size">

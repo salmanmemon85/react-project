@@ -123,9 +123,8 @@ export default function ChemistryData({ biology }) {
                                         </>
                                       );
                                     })}
-                                    <div className="inner-topic-area-total flex justify-end mb-2">
+                                    <div className="inner-topic-area-total flex justify-start mb-2">
                                       <h5>
-                                        <strong>Total</strong>{" "}
                                         {topic.totalTopicmin}{" "}
                                       </h5>
                                     </div>

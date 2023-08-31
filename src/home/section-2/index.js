@@ -292,7 +292,7 @@ function SectionSkil() {
         <div className="container w-100">
           <div className="grid grid-cols-12 flex justify-content-between items-center">
             <div className="col-span-6">
-              <div className=" relative z-[999]">
+              <div className=" relative z-[999] skil-compute-area">
                 <h2 className="primary-hd light-hd space-bottom chose-skill">
                   Why Choose SkillCompute{" "}
                 </h2>{" "}

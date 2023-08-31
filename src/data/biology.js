@@ -506,7 +506,7 @@ const biologyData = {
                                 }
                                
                             ],
-                            totalMinutes: 85,
+                            totalMinutes: 55,
                         }
                     ],
                 },
@@ -627,9 +627,9 @@ const biologyData = {
                             totalMinutes: 40,
                         }
                     ],
-                    totalTopicmin: 100,
+                    totalTopicmin: "Total mins 235",
                 },
-
+                  
                 {
                 
                     id: 20,
@@ -661,7 +661,7 @@ const biologyData = {
                                 },
                                
                             ],
-                            totalMinutes: 125,
+                            totalMinutes: 105,
                         }
                     ],
                 },
@@ -756,6 +756,7 @@ const biologyData = {
                             totalMinutes: 115,
                         }
                     ],
+                    totalTopicmin: "Total mins 265",
                 },
 
                 {
