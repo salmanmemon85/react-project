@@ -6,9 +6,13 @@ import cube3 from "../images/cube3.png";
 import cube4 from "../images/cube4.png";
 import cube5 from "../images/cube5.png";
 import cube7 from "../images/cube7.png";
+import { Helmet } from "react-helmet";
 export default function Enroll() {
   return (
     <>
+     <Helmet>
+      <title>SkillCompute-Enroll</title>
+    </Helmet>
       <section className="enroll-sec banner">
         <img src={cube2} alt="" className="cube2" />
         <img src={cube3} alt="" className="cube3" />

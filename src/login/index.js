@@ -8,7 +8,7 @@ import Student from "./component/student";
 import Parents from "./component/parents";
 import Institution from "./component/institution";
 import { Link, Route, Routes } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 export default function Login() {
   const [activeComponent, setActiveComponent] = useState(null);
 
@@ -26,6 +26,9 @@ export default function Login() {
   };
   return (
     <>
+     <Helmet>
+      <title>SkillCompute-Login</title>
+      </Helmet>
       <section className="login-sec">
         <img src={login2} alt="" className="login2" />
         <img src={cube3} alt="" className="login3" />

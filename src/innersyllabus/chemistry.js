@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Design from "../component/design";
-import cube6 from "../images/contact1.png";
-import cube1 from "../images/cube1.png";
+import { Helmet } from "react-helmet";
 export default function ChemistryData({ chemisData }) {
   const [openTopic, setOpenTopic] = useState(false);
   const handleAccordionClick = (id) => {
@@ -9,6 +7,9 @@ export default function ChemistryData({ chemisData }) {
   };
   return (
     <>
+     <Helmet>
+      <title>SkillCompute-Syllabus-Chemistry</title>
+      </Helmet>
       <section className="inner-banner">
         <div className="container mx-auto">
           <div className="grid grid-cols-12">

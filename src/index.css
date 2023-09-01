@@ -712,7 +712,7 @@ img.cube16 {
   @apply text-[83px] text-white text-center font-["ExtraBold"] drop-shadow-xl shadow-black
 }
 .syllabus-sec{
-  @apply bg-no-repeat bg-cover h-[1018px] flex   justify-center items-center
+  @apply bg-no-repeat bg-cover h-[1018px] flex   justify-center items-center relative
 }
 .syllabus-bg{
   @apply bg-[#f1f2f2] py-[100px]
@@ -737,7 +737,6 @@ img.cube16 {
 }
 .syllabus-sec{
   background-image: url(./images/bgabout.png);
-  position: relative;
 }
 /* .syllabus-sec::after{
   background-image: url(./images/syllabusbgafter.png);
@@ -971,9 +970,7 @@ img.cube16 {
   @apply absolute bottom-[23%] right-[7%]
 }
 .container {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
+  @apply max-w-[1400px] w-[100%] mx-auto my-0
 }
 .syllabus-img {
  @apply mb-[36px] 

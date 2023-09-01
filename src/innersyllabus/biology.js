@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-
+import { Helmet } from "react-helmet";
 export default function ChemistryData({ biology }) {
   const [openTopic, setOpenTopic] = useState(false);
   const handleAccordionClick = (id) => {
     setOpenTopic((prevId) => (prevId === id ? null : id));
   };
-  // const [innerTopic, setInnerTopic] = useState(false);
-  // const handleInnerAccordionClick = (id) => {
-  //   setInnerTopic((prevId) => (prevId === id ? null : id));
-  // };
   return (
     <>
+      <Helmet>
+        <title>SkillCompute-Syllabus-Biology</title>
+      </Helmet>
       <section className="inner-banner">
         <div className="container mx-auto">
           <div className="grid grid-cols-12">
@@ -124,9 +123,7 @@ export default function ChemistryData({ biology }) {
                                       );
                                     })}
                                     <div className="inner-topic-area-total flex justify-start mb-2">
-                                      <h5>
-                                        {topic.totalTopicmin}{" "}
-                                      </h5>
+                                      <h5>{topic.totalTopicmin} </h5>
                                     </div>
                                   </div>
                                 )}
